@@ -1,6 +1,6 @@
 function App(){
   return(
-    <div>App</div>
+    <div>App folder</div>
   )
 }
 export default App;
