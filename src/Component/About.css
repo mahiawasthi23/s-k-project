@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-about{
+    background-image: url(/public/back-image.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 30px;
+    margin-top: 80px;
+}
+
+h1{
+    font-size: 50px;
+    font-style: italic;
+    font-family: f;
+   letter-spacing: 1px;
+}
+
+p{
+    font-size: 23px;
+    font-style: italic;
+    font-family: f;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.about-details h1 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.about-details h1:hover {
+    transform: scale(1.02);
+    color: #0077ff;
+    cursor: pointer;
+}
+  
+.about-details p {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.about-details p:hover {
+    transform: scale(1.02); 
+    opacity: 0.9; 
+    cursor: pointer;
+    color: #0077ff;
+}
+  
+  

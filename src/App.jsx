@@ -1,6 +1,13 @@
+import React from "react";
+import './Component/About.jsx'
+import About from "./Component/About.jsx";
+
 function App(){
   return(
-    <div>App folders</div>
+
+    <>
+    <About/>
+    </>
   )
 }
 export default App;
