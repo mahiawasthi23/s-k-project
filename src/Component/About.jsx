@@ -54,7 +54,6 @@ function About  () {
                     <p>{activeContent}</p>
                 </div>
                 )}
-
         </div>
         <div className='about-image'>
             <img src='/image.png' className='images2'></img>
