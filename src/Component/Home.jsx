@@ -8,9 +8,10 @@ function Home (){
                     <h1>SK Enterprises</h1>
                     <p>Your Trusted Home and Commercial Service Partner</p>
                 </div>
-                <button>Our Services</button>
+                <button className="our">Our Services</button>
             </div>
         </div>
     )
 }
+
 export default Home;
