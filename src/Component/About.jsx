@@ -59,6 +59,33 @@ function About  () {
             <img src='/image.png' className='images2'></img>
         </div>
     </div>
+
+
+   <section className='team-section'>
+    <h2 className='team-heading'>We're Here to Keep You Cool & Comfortable</h2>
+    <div className='team-container'>
+    <div className='team-member'>
+        <div className='team-text'>
+        <p>With years of experience and a commitment to quality, SK Enterprises has earned the trust of hundreds of satisfied customers. We provide reliable and efficient AC services, ensuring comfort and peace of mind for every client</p>
+        </div>
+        <h2>Trusted</h2>
+      </div>
+
+      <div className='team-member'>
+        <div className='team-text'>
+        <p>Our team of certified and skilled technicians is trained to handle all types of AC systems. From minor repairs to complete servicing, we ensure every job is done with precision and care.</p>
+        </div>
+        <h2>Expert Technicians</h2>
+      </div>
+
+      <div className='team-member'>
+        <div className='team-text'>
+        <p>We value your time and comfort. That's why SK Enterprises offers prompt service and quick response times, ensuring your AC is back up and running when you need it the most.</p>
+        </div>
+        <h2>Fast & Reliable Service</h2>
+      </div>
+    </div>
+   </section>
     </>
   )
 }
