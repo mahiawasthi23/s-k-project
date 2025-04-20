@@ -4,24 +4,29 @@
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 20px;
-    padding: 20px;
 }
-
+.nav-contain{
+   padding: 20px;
+}
 .home{
     text-decoration: none;
     color: dimgrey;
+    padding: 20px;
 }
 .about{
     text-decoration: none;
     color: dimgrey;
+    padding: 20px;
 }
 
 .contact{
     text-decoration: none;
     color: dimgrey;
+    padding: 20px;
 }
 
 .service{
     text-decoration: none;
     color: dimgrey;
+    padding: 20px;
 }
