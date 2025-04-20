@@ -12,7 +12,7 @@ body{
     color: white;
     text-align: center;
     padding: 150px 20px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
 
@@ -23,6 +23,7 @@ h1{
 }
 
 .about-details p{
+    margin-top: 20px;
     font-size: 20px;
     font-family: f;
     letter-spacing: 1px;
@@ -64,7 +65,8 @@ h1{
 }
 
 .about-container p{
-    font-size: 18px;
+    margin-top: 30px;
+    font-size: 19px;
     font-family: f;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -132,9 +134,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     margin: 50px;
-
     margin-top: -30px;
-
 }
 
 
@@ -143,23 +143,24 @@ h1{
     padding: 23px;
     border: 1px solid rgb(194, 193, 193);
     width: 400%;
-    height: 160px;
+    height: 210px;
     margin-left: 20px;
     animation: slideInLeft 1s ease forwards;
    
 }
 .about-miss-viss h3{
     font-size: 17px;
+    margin-top: 50px;
 }
 
 
 
 .about-miss-viss-details{
-    padding: 7px;
+    padding: 19px;
     margin-top: -23px;
     margin-left: -23px;
     height: 30px;
-    width: 104%;
+    width: 106%;
     border: 1px solid rgb(194, 193, 193);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
@@ -170,9 +171,12 @@ h1{
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 40px;
-    margin-top: -7px;
-    margin-left: -47px;
+    height: 10px;
+    /* background-color: red; */
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+
    
 
 }
@@ -182,8 +186,8 @@ h1{
     list-style: none;
     font-size: 25px;
     text-align: left;
-    padding: 7px;
-    margin-top: 5px;
+    padding: 5px;
+    margin-left: -20px;
     
 
 }
@@ -197,6 +201,7 @@ h1{
     font-size: 18px;
     font-family: f;
     word-spacing: 2px;
+    margin-top: 20px;
 }
 
 .about-image{
