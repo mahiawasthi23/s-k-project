@@ -4,5 +4,6 @@ function Contact(){
            <p>hello</p>
         </div>
     )
+
 }
 export default Contact;
