@@ -22,7 +22,7 @@ function Home() {
           <p>Your Trusted Home and Commercial Service Partner</p>
         </div>
         <Link to="/service" className="home-service">
-          <button className="home-learn-more">Explore Our Services</button>
+          <button className="home-learn-service">Explore Our Services</button>
         </Link>
       </div>
 
@@ -42,11 +42,14 @@ function Home() {
           <div key={index} className="home-service-card">
             <i className="home-choose-icon">{service.icon}</i>
             <h3>{service.title}</h3>
-            <button className="home-learn-more">Learn More</button>
+            <Link to="/service">
+              <button className="home-learn-more">Learn More</button>
+            </Link>
           </div>
         ))}
       </div>
 
+      <div className="choose-us-section">
       <h2 className="home-section-title">Why Choose Us</h2>
 <div className="home-choose-us">
   <div className="home-choose-card">
@@ -70,10 +73,14 @@ function Home() {
     <p>We stand by our work with a service warranty.</p>
   </div>
 </div>
+</div>
 
       <div className="home-gallery-preview">
         <h2 className='home-section-title'>Gallery</h2>
         <div className="home-gallery-grid">
+          <img src="/AC.jpg" alt="Work 1" />
+          <img src="/AC.jpg" alt="Work 2" />
+          <img src="/AC.jpg" alt="Work 3" />
           <img src="/AC.jpg" alt="Work 1" />
           <img src="/AC.jpg" alt="Work 2" />
           <img src="/AC.jpg" alt="Work 3" />
@@ -97,7 +104,7 @@ function Home() {
 
       <div className="home-cta-strip">
         <h3>Need AC Service Now?</h3>
-        <p>Call us at <strong>+91-9876543210</strong></p>
+        <p>Call us at <strong>+91-9767520021</strong></p>
         <Link to="/contact">
           <button className="home-learn-more">Contact Us</button>
         </Link>

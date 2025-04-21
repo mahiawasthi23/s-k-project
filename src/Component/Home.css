@@ -7,6 +7,7 @@
   .home-contener {
     width: 100%;
     overflow-x: hidden;
+    background-color: ghostwhite;
   }
   
   .home-main {
@@ -74,29 +75,33 @@
     animation: fadeIn 1.5s ease-in;
   }
   
-  .home-learn-more{
+  .home-learn-more,.home-learn-service{
     margin-top: 2rem;
-    padding: 1rem 3rem;
+    padding: 0.5rem 1rem;
     background-color: #0d57eb;
     border: none;
     color: white;
-    font-size: 1.1rem;
-    border-radius: 8px;
+    font-size: 1rem;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     animation: popUp 1.8s ease;
   }
   
-  .home-learn-more:hover {
+  .home-learn-more:hover,.home-learn-service:hover{
     transform: scale(1.05);
     background-color: #2d69ca;
+  }
+  .home-learn-service{
+    padding: 1rem 4rem;
+    font-size: 1.1rem;
   }
   
 
   .home-section-title{
     font-size: 2rem;
     text-align: center;
-    margin: 3rem 0 1.5rem;
+    margin: 0.5rem 0 1.5rem;
     color: rgb(4, 174, 247);
   }
   
@@ -111,103 +116,22 @@
   }
   
 
-  .home-service-card{
+  .home-service-card {
     background: #fff;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
-  .home-service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .home-service-card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .home-service-card h3 {
-    font-size: 1.4rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .home-intro, .home-why-us, .home-gallery-preview, .home-testimonials, .home-cta-strip {
-    max-width: 1000px;
-    margin: 3rem auto;
-    padding: 1.5rem;
-    text-align: center;
-  }
-  
-  
-  .home-intro p, .home-why-us ul, .home-testimonials p {
-    font-size: 1.1rem;
-    color: #444;
-  }
-  
-  .home-why-us ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .home-why-us li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-  }
-  
-  .home-gallery-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 1rem 0;
-  }
-  
-  .home-gallery-grid img {
-    width: 300px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .home-testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-  
-  .home-testimonial {
-    background: #f9f9f9;
-    padding: 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  }
-  
-  .home-cta-strip {
-    background-color: #0d57eb;
-    color: white;
-    padding: 2rem 1rem;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-  }
-  
-  .home-cta-strip h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .home-cta-strip p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
 
+
+  .choose-us-section{
+    background: linear-gradient(to right, rgb(232, 227, 243),rgb(229, 243, 248), rgb(236, 235, 235));
+    padding: 0.5rem 0;
+}
   .home-choose-title {
     font-size: 2.2rem;
     text-align: center;
@@ -217,9 +141,9 @@
   
   .home-choose-us {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
-    padding: 0 2rem 4rem;
+    padding: 2rem 2rem 4rem;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -230,6 +154,8 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -256,6 +182,140 @@
     color: #555;
   }
   
+  .home-service-card::after, .home-choose-card::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #1D4ED8; 
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .home-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .home-service-card:hover::after,
+  .home-choose-card:hover::after {
+    width: 100%;
+  }
+  
+  .home-service-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-service-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home-intro, .home-why-us, .home-gallery-preview, .home-testimonials, .home-cta-strip ,.choose-us-section{
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    border: 5px solid rgb(241, 240, 240);
+  }
+  .home-intro,.home-testimonials{
+    background: linear-gradient(to right, rgb(236, 235, 235), rgb(232, 227, 243),rgb(229, 243, 248));
+  }
+  
+  
+  .home-intro p, .home-why-us ul, .home-testimonials p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .home-why-us ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .home-why-us li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .home-gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    animation: slideGallery 20s linear infinite;
+    width: max-content;
+  }
+  
+  .home-gallery-grid img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid gray;
+  }
+  .home-gallery-grid img:hover{
+    transform: translateY(-10px);
+  }
+
+  .home-gallery-preview {
+    background-color: rgb(239, 238, 238);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  @keyframes slideGallery {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .home-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .home-testimonial {
+    background: #f9f9f9;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+
+  .home-cta-strip {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); 
+    color: #0b3d91; 
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .home-cta-strip h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #0b3d91;
+  }
+  
+  .home-cta-strip p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+    
   @keyframes slideDown {
     from {
       transform: translateY(-40px);
@@ -287,7 +347,7 @@
     }
   }
   
-
+  
   @media (max-width: 768px) {
     .home-main .para h1 {
       font-size: 2.5rem;
@@ -297,13 +357,21 @@
       font-size: 1.2rem;
     }
   
-    .home-contener .home-learn-more {
-      font-size: 1rem;
-      padding: 0.8rem 2rem;
+    .home-learn-more, .home-learn-service {
+      font-size: 0.9rem;
+      padding: 0.5rem 1.2rem;
     }
   
-    .home-section-title {
-      font-size: 1.8rem;
+    .home-service-grid,
+    .home-choose-us,
+    .home-testimonial-grid {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  
+    .home-gallery-grid img {
+      width: 90%;
+      height: auto;
     }
   }
   
