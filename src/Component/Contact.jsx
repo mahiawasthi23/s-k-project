@@ -8,7 +8,7 @@ function Contact() {
         <p className='contact-para'>We're Here to Help You...</p>
       </div>
       <div className='img-container'>
-        <img src="/public/contact.png" alt="Contact" />
+        <img src="/contact.png" alt="Contact" />
       </div>
     </main>
       <section className='contact-section'>
@@ -55,6 +55,7 @@ function Contact() {
               <div id="message-container"></div>
             </form>
           </div>
+          
         </div>
       </section>
       <section className="location-map">
