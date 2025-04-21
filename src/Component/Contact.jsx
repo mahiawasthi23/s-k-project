@@ -55,7 +55,6 @@ function Contact() {
               <div id="message-container"></div>
             </form>
           </div>
-          
         </div>
       </section>
       <section className="location-map">
