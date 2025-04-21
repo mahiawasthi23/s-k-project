@@ -8,7 +8,7 @@ import Contact from "./Component/Contact.jsx";
 import Service from "./Component/Service.jsx";
 import Home from "./Component/Home.jsx";
 import Footer from "./Component/Footer.jsx";
-
+import Gallary from "./Component/Gallary.jsx";
 function App(){
   return(
     <Router>
@@ -17,6 +17,7 @@ function App(){
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/gallary" element={<Gallary/>} />
       <Route path="/service" element={<Service/>} />
     </Routes>
   </Router>
