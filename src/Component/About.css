@@ -2,52 +2,313 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 .main-about{
-    background-image: url(/public/back-image.png);
+    background-image: url(/public/image.png);
+    
     background-size: cover;
     background-position: center;
-    color: white;
     text-align: center;
-    padding: 150px 30px;
-    margin-top: 80px;
+    padding: 150px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
-    font-size: 50px;
-    font-style: italic;
+
+
+.main-about h1{
+    color: white;
+    margin-left: 100px;
+    text-shadow: 2px 0 2px black;
+    padding: 0 1rem;
     font-family: f;
-   letter-spacing: 1px;
-}
-
-p{
-    font-size: 23px;
-    font-style: italic;
-    font-family: f;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-}
-
-.about-details h1 {
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease,color     0.3s ease,
+    text-shadow 0.3s ease;
+    font-size: 4rem;
 }
 
 .about-details h1:hover {
     transform: scale(1.02);
-    color: #0077ff;
     cursor: pointer;
+    transform: translateY(-10px);
+    color: #ffd700;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.7);
 }
-  
-.about-details p {
+
+.about-details p{
+    text-shadow: 2px 0 2px black;
+    padding: 0 1rem;
+    margin-left: 100px;
+    color: white;
+    margin-top: 10px;
+    word-spacing: 2px;
+    font-size: 2rem;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
+  
   
 .about-details p:hover {
     transform: scale(1.02); 
     opacity: 0.9; 
-    cursor: pointer;
-    color: #0077ff;
+    transform: translateY(-5px);
+    color: #ffd700;
+}
+
+/*   */
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    margin-top: 100px;
+   
+ 
+    
+}
+
+.about-container p{
+    margin-top: 30px;
+    font-size: 19px;
+    font-family: f;
+    word-spacing: 2px;
+}
+
+.about-container h2{
+    margin-top: -30px;
+    font-size: 30px;
+}
+
+.about-your{
+    padding: 30px;
+    animation: slideInLeft 1s ease forwards;
+   
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.about-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20PX;
+    animation-delay: 0.3s;
+    animation: slideInRight 1s ease forwards;
+
+}
+
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.images{
+    width: 350PX;
+    height:260PX;
+    margin-left: 100px;
 }
   
   
+
+/* miss viss */
+
+.about-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    margin-top: -30px;
+}
+
+
+
+.about-miss-viss{
+    padding: 23px;
+    border: 1px solid rgb(194, 193, 193);
+    width: 400%;
+    height: 210px;
+    margin-left: 20px;
+    animation: slideInLeft 1s ease forwards;
+   
+}
+.about-miss-viss h3{
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+
+
+.about-miss-viss-details{
+    padding: 19px;
+    margin-top: -23px;
+    margin-left: -23px;
+    height: 30px;
+    width: 106%;
+    border: 1px solid rgb(194, 193, 193);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+}
+
+.about-miss-viss-details ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 10px;
+    /* background-color: red; */
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+
+   
+
+}
+
+.about-miss-viss-details ul li{
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+    text-align: left;
+    padding: 5px;
+    margin-left: -20px;
+    
+
+}
+
+.about-miss-viss-details ul li:hover{
+    background-color: #0077ff;
+}
+
+
+.about-container2 p{
+    font-size: 18px;
+    font-family: f;
+    word-spacing: 2px;
+    margin-top: 20px;
+}
+
+.about-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20PX;
+}
+
+.images2{
+    margin-left: 20px;
+    width: 310PX;
+    height:210PX;
+}
+  
+
+/*  */
+
+.team-section{
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.team-section .team-heading{
+    font-size: 30px;
+    font-family: f;
+    word-spacing: 5px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 20px;    
+}
+
+.team-member{
+    text-align: center;
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    animation: slideInLeft 1s ease forwards;
+}
+
+
+
+.team-text {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;  
+    background-color: #e7e7f5;
+    line-height: 1.4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+
+.team-text:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.team-member h2{
+    margin-top: 12px;
+    color: #333;
+    transition: color 0.3s ease;
+
+}
+
+.team-member h2:hover{
+    color: #007bff;
+}
+
+.team-member p{
+    color: #666;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.team-member p:hover{
+    color: #0056b3;
+}
+
+
