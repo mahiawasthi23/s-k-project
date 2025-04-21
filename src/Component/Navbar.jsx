@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./navbar.css"
-
-
-
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -13,10 +10,7 @@ const Navbar = () => {
         <Link to="/contact" style={{marginRight:20}} className='contact'>Contact</Link>
         <Link to="/service" style={{marginRight:60}} className='service'>Service</Link>
         </div>
-      
-      
     </nav>
   );
 };
-
 export default Navbar;
