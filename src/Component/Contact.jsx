@@ -14,7 +14,7 @@ function Contact() {
       <section className='contact-section'>
         <div className='contact-container'>
           <div className='contact-info'>
-            <h2>Contact Details</h2>
+            <h2 className="contact-data">Contact Details</h2>
             <div className='contact-details'>
               <div className='contact-item'>
                 <i className="fas fa-map-marker-alt"></i>
@@ -44,11 +44,11 @@ function Contact() {
               <input type="text" name="name" placeholder='Your Name' />
               <input type="email" name="email" placeholder='Your Email' />
               <input type="number" name="phone" placeholder='Your Phone Number' />
-              <select name="service" required>
-                <option>Select Service Type</option>
-                <option value="ac-repair">AC Repair</option>
-                <option value="installation">Installation</option>
-                <option value="other">Other</option>
+              <select name="service"  className="select-option" required>
+                <option className="option">Select Service Type</option>
+                <option value="ac-repair" className="option">AC Repair</option>
+                <option value="installation" className="option">Installation</option>
+                <option value="other" className="option">Other</option>
               </select>
               <textarea name="message" placeholder='Describe Your Service Request' required></textarea>
               <button type="submit" className="text-btn">Send Message</button>
