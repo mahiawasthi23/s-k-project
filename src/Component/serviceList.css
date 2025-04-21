@@ -223,3 +223,41 @@
     width: 100%;
   }
   
+  .service-story{
+    width: 100%;
+    background-color: #f9fafb;
+    margin-top: 40px;
+    padding: 70px;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+.our-story{
+  padding: 10px;
+  text-align: center;
+
+}
+
+.our-story-headline{
+  padding: 10px;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.contact-us{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.details-service{
+  margin: auto;
+  width: 390px;
+ 
+
+}
+
+.details-service-p{
+  padding: 10px;
+  margin-left: 88px;
+}

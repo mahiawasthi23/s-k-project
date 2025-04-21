@@ -9,70 +9,36 @@ function ServiceList(){
       </div>
 
       <div className="service-section">
-        <h2>AC Repair & Maintenance</h2>
-        <p>Expert cooling system diagnostics, repair, and maintenance. We handle all makes and models, ensuring your air conditioning runs efficiently and effectively.</p>
-        <ul>
-          <li>Comprehensive system diagnostics</li>
-          <li>Refrigerant recharge</li>
-          <li>Compressor and motor repairs</li>
-          <li>Regular maintenance services</li>
-        </ul>
-      </div>
+          <h2>AC Services and Maintenance</h2>
+          <p>We provide diagnostics, servicing, and repair for all types of AC systems.</p>
+          <ul>
+            <li>Types of AC: Split AC, Duct AC, CASSETTE AC, Cold Room, Window AC, VRF/VRV</li>
+            <li>AC Servicing: Air filter cleaning, cooling coil clearing, panel cleaning, gas pressure check, ampere check, condenser coil cleaning</li>
+            <li>Repair: Gas charging, linkage rectification, compressor replacement, cooling/condenser coil repair, motor replacement</li>
+          </ul>
+        </div>
 
-      <div className="service-section">
-        <h2>Washing Machine Repair</h2>
-        <p>From front-load to top-load machines, we diagnose and repair all types of washing machines efficiently and affordably.</p>
-        <ul>
-          <li>Drum and belt repairs</li>
-          <li>Drainage and water inlet issues</li>
-          <li>Electronic control diagnostics</li>
-          <li>Routine cleaning and service</li>
-        </ul>
-      </div>
+        <div className="service-section">
+          <h2>Professional AC Installation</h2>
+          <p>Installation services for all major AC types by certified professionals.</p>
+          <ul>
+            <li>Split AC Installation</li>
+            <li>CASSETTE AC Installation</li>
+            <li>Ductable AC Installation</li>
+            <li>VRV / VRF Installation</li>
+            <li>AHU Copper Piping Installation</li>
+          </ul>
+        </div>
 
-      <div className="service-section">
-        <h2>Professional Installation</h2>
-        <p>Ensure your appliances and systems are installed correctly and safely with our expert installation services.</p>
-        <ul>
-          <li>New appliance setup</li>
-          <li>Electrical and plumbing integration</li>
-          <li>Safe mounting and fitting</li>
-          <li>Testing and demonstration</li>
-        </ul>
-      </div>
-
-      <div className="service-section">
-        <h2>Home Service Support</h2>
-        <p>Our mobile service team brings expert assistance directly to your doorstep for all household repair needs.</p>
-        <ul>
-          <li>Doorstep diagnostics</li>
-          <li>Quick fixes for common issues</li>
-          <li>Spare parts availability</li>
-          <li>Transparent service charges</li>
-        </ul>
-      </div>
-
-      <div className="service-section">
-        <h2>TV & Entertainment System Repair</h2>
-        <p>From smart TVs to home theaters, we restore your entertainment systems to peak performance.</p>
-        <ul>
-          <li>Screen and display repairs</li>
-          <li>Audio issues and speaker replacement</li>
-          <li>Motherboard and HDMI port fixes</li>
-          <li>Wall-mount setup and calibration</li>
-        </ul>
-      </div>
-
-      <div className="service-section">
-        <h2>Computer & Laptop Services</h2>
-        <p>Reliable solutions for hardware and software issues to keep your devices running smoothly.</p>
-        <ul>
-          <li>System formatting and OS installation</li>
-          <li>Virus and malware removal</li>
-          <li>Hardware upgrades</li>
-          <li>Data recovery and backup</li>
-        </ul>
-      </div>
+        <div className="service-section">
+          <h2>Home Service Support</h2>
+          <p>Reliable and fast doorstep services for both home and commercial requirements.</p>
+          <ul>
+            <li>On-site repair services</li>
+            <li>Emergency technical support</li>
+            <li>Comprehensive technical solutions</li>
+          </ul>
+        </div>
             </div>
 
             <div className="our-service-guranty">
@@ -99,7 +65,17 @@ function ServiceList(){
             </div>
 
         </div>
+       
+          
+
+        <div className="service-story">
+          <h2 className='our-story'>Our Story</h2>
+          <p className='our-story-headline'>Established in 2018, S.K. Enterprises has been delivering reliable home and commercial services under the blessing of Sadguru Krupa.</p>
+          
         </div>
+
+      </div>
     )
 }
 export default ServiceList;
+
