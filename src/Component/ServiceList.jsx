@@ -6,8 +6,6 @@ function ServiceList(){
         <div className="servicelist-cont">
             <div className="servicelist-dis">
             <div className="services-header">
-        <h1>Our Professional Services</h1>
-        <p>Comprehensive Home Repair and Installation Solutions</p>
       </div>
 
       <div className="service-section">

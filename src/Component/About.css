@@ -7,15 +7,13 @@ body{
 }
 
 .main-about{
-    background-image: url(/public/image.png);
-    
+    background-image: url(/public/cpoy\ \ AC.png);
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 150px 20px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position:top;
     width: 100%;
     height: 100vh;
     min-height: 90vh;
