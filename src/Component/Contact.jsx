@@ -140,22 +140,10 @@ function Contact() {
 
       <section className="location-map">
         <h2 className="location-heading">Our Location</h2>
-          
-
-
-
-
-
-
-
-
-
-
-
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3781.9243991575354!2d73.95804109999999!3d18.57744679999999!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1745211960599!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3781.9243991575354!2d73.95804109999999!3d18.57744679999999!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1745211960599!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
       </section>
     </>
   );
+    )
 }
 export default Contact;
