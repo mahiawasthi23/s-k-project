@@ -6,11 +6,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <div className='nav-contain'>
-        <Link to="/" style={{marginRight:20} } className='home'>Home</Link>
-        <Link to="/about" style={{marginRight:20}} className='about'>About</Link>
-        <Link to="/gallary" style={{marginRight:20}} className='gallary'>Gallary</Link>
-        <Link to="/service" style={{marginRight:60}} className='service'>Service</Link>
-        <Link to="/contact" style={{marginRight:20}} className='contact'>Contact</Link>
+        <Link to="/" style={{marginRight:20}} className="nav-link home">Home</Link>
+        <Link to="/about" style={{marginRight:20}} className="nav-link about">About</Link>
+        <Link to="/gallary" style={{marginRight:20}} className="nav-link gallary">Gallary</Link>
+        <Link to="/service" style={{marginRight:20}} className="nav-link service">Service</Link>
+        <Link to="/contact" style={{marginRight:60}} className="nav-link contact">Contact</Link>
         </div>
     </nav>
   );
