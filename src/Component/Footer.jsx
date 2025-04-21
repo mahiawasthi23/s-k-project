@@ -1,6 +1,4 @@
 import "./footer.css"
-
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -22,3 +20,8 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
+

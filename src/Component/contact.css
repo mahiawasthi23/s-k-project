@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:linear-gradient(to right, rgb(218, 218, 218),rgb(241, 240, 240),rgb(242, 240, 240),rgb(254, 254, 254));
+    background:linear-gradient(to right, rgb(218, 218, 218),rgb(241, 240, 240),rgb(242, 240, 240),rgb(254, 254, 254)); 
     background-size: cover;
     background-position: center;
     color: white;
@@ -14,24 +14,20 @@ body{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     gap: 20px;
   }
-  
   .contact-info-content {
     flex: 1;
   }
-  
   .img-container {
     flex: 1;
     display: flex;
     justify-content: center;
   }
-  
   .img-container img {
     max-width: 80%;
     height: auto;
   }
-  
 .contact-heading{
-    font-size: 50px;
+    font-size: 55px;
     font-style: italic;
     font-family: f;
     letter-spacing: 1px;
@@ -40,25 +36,22 @@ body{
     word-spacing: 10px;
 }
 .contact-para{
-    font-size: 28px;
+    font-size: 32px;
     font-style: italic;
     font-family: f;
     letter-spacing: 1px;
       font-weight: 700;
     word-spacing: 2px;
 }
-
 .contact-info-content .contact-heading {
     transition: transform 0.3s ease, color 0.3s ease;
 
 }
-
 .contact-info-content .contact-heading:hover {
     transform: scale(1.02);
     color: #ffd700;
     cursor: pointer;
 }
-  
 .contact-info-content .contact-para {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -219,6 +212,36 @@ body{
     color: #007bff;
     transform: translateX(5px);
 }
+.contact-item a{
+    color:white;
+    text-decoration: none;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+.select-option {
+    appearance: none;         
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    background: transparent;
+    padding-right: 30px; 
+}
+  .dropdown-icon {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    color: #555;
+  }
+  .dropdown-icon.rotate {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
 @media screen and (max-width: 768px) {
     .contact-container {
         flex-direction: column;
