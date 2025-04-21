@@ -9,7 +9,7 @@
 .service-background {
     position:relative;
     width: 100%;
-    background-color: #E8F9FF; 
+    background-color: rgb(231, 229, 229); 
     overflow: hidden;
   }
   
