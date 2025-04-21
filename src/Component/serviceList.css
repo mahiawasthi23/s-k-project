@@ -30,13 +30,21 @@
     color: #666;
   }
   
+
   .service-section {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
+  .service-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
   
   .service-section h2 {
     color: #333;
@@ -92,9 +100,34 @@
   }
   
 
-  .service-section:hover {
-    border-left: 4px solid #007bff;
+
+  .service-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
   }
+  
+  
+  .service-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0%;
+    background-color: #007bff;
+    transition: height 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .service-section:hover::before {
+    height: 100%;
+  }
+  
   
 
   .service-section h2:hover,
@@ -142,7 +175,7 @@
   }
   
   .heading {
-    color: #007bff;
+
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 40px;
@@ -164,16 +197,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .icon {
-    color: #007bff;
-    font-size: 32px;
-    margin-bottom: 15px;
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   
-  .text {
-    color: #444;
-    font-size: 16px;
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover::after {
+    width: 100%;
   }
   
