@@ -38,7 +38,6 @@ function Contact() {
               </div>
             </div>
           </div>
-
           <div className='contact-form-container'>
             <h2 className="form-heading">Send Us a Message</h2>
             <form id="contact-form">
