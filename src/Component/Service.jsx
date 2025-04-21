@@ -1,4 +1,5 @@
 import "./Service.css"
+import ServiceList from "./ServiceList";
 
 function Service() {
     return (
@@ -15,8 +16,10 @@ function Service() {
                 </div>
                 
             </div>
+            <ServiceList/>
         </div>
     );
 }
 
 export default Service;
+

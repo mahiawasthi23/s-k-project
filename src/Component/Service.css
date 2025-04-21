@@ -1,4 +1,4 @@
-.service-img{
+ .service-img{
     height: 400px;
     width: 100%;
     object-fit: cover;
@@ -71,4 +71,8 @@
     color: #0077ff;
     cursor: pointer;
     opacity: 0.9; 
+} 
+
+.service-con{
+    background-color: #f4f4f9;;
 }
