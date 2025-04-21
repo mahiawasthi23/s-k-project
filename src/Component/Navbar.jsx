@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./navbar.css"
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 19c9b95d0fbd12f4c23079bba7ac0e023fbf74c7
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -13,10 +16,7 @@ const Navbar = () => {
         <Link to="/gallary" style={{marginRight:20}} className='gallary'>Gallary</Link>
         <Link to="/service" style={{marginRight:60}} className='service'>Service</Link>
         </div>
-      
-      
     </nav>
   );
 };
-
 export default Navbar;
