@@ -56,7 +56,7 @@ function About  () {
                 )}
         </div>
         <div className='about-image'>
-            <img src='/image.png' className='images2'></img>
+            <img src='/repairing-service.png' className='images2'></img>
         </div>
     </div>
 
