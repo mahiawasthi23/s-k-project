@@ -69,7 +69,7 @@ body{
     font-size: 2rem;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-  
+
 .about-details p:hover {
     transform: scale(1.02); 
     opacity: 0.9; 
@@ -77,14 +77,15 @@ body{
     color: #ffd700;
 }
 
-/*   */
+
+/* 2  */
 
 .about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
-    margin-top: 100px;   
+    margin-top: 100px; 
 }
 
 .about-container p{
@@ -101,7 +102,7 @@ body{
 
 .about-your{
     padding: 30px;
-    animation: slideInLeft 1s ease forwards; 
+    animation: slideInLeft 1s ease forwards;
 }
 
 
@@ -124,6 +125,7 @@ body{
     animation: slideInRight 1s ease forwards;
 }
 
+
 @keyframes slideInRight {
     from {
         transform: translateX(100px);
@@ -135,228 +137,13 @@ body{
     }
 }
 
+
 .images{
     width: 350PX;
     height:260PX;
     margin-left: 100px;
 }
 
-/* miss viss */
-
-.about-container2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px;
-    margin-top: -30px;
-    
-}
-
-
-
-.about-miss-viss{
-    padding: 23px;
-    border: 1px solid rgb(194, 193, 193);
-    width: 400%;
-    height: 210px;
-    margin-left: 20px;
-    animation: slideInLeft 1s ease forwards;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   
-}
-.about-miss-viss h3{
-    font-size: 17px;
-    margin-top: 50px;
-}
-
-
-
-.about-miss-viss-details{
-    padding: 19px;
-    margin-top: -23px;
-    margin-left: -23px;
-    height: 30px;
-    width: 112%;
-    color: white;
-    background-color: #0077ff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    
-}
-
-.about-miss-viss-details ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 10px;
-    padding: 20px;
-    margin-top: -20px;
-    margin-left: -20px;
-   
-
-   
-
-}
-
-.about-miss-viss-details ul li{
-    gap: 20px;
-    list-style: none;
-    font-size: 25px;
-    text-align: left;
-    padding: 4px;
-    margin-left: 130px;
-    
-    
-    
-
-}
-
-.about-miss-viss-details ul li:hover{
-    background-color: white ;
-    color: #0077ff;
-}
-
-
-.about-container2 p{
-    font-size: 18px;
-    font-family: f;
-    word-spacing: 2px;
-    margin-top: 20px;
-}
-
-.about-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 20PX;
-}
-
-.images2{
-    margin-left: 10px;
-    width: 310PX;
-    height:210PX;
-}
-
-
-/*  */
-
-.team-section{
-    padding: 50px 5%;
-    text-align: center;
-}
-
-.team-section .team-heading{
-    font-size: 30px;
-    font-family: f;
-    word-spacing: 5px;
-}
-
-.team-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-    flex-wrap: wrap;
-    gap: 20px;    
-}
-
-.team-member{
-    text-align: center;
-    width: 350px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    animation: slideInLeft 1s ease forwards;
-}
-
-
-
-.team-text {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    padding: 20px;  
-    background-color: #e7e7f5;
-    line-height: 1.4;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.team-text:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-
-.team-member h2{
-    margin-top: 12px;
-    color: #333;
-    transition: color 0.3s ease;
-
-}
-
-.team-member h2:hover{
-    color: #007bff;
-}
-
-.team-member p{
-    color: #666;
-    margin-top: 5px;
-    transition: color 0.3s ease;
-}
-
-.team-member p:hover{
-    color: #0056b3;
-}
-
-
-
-
-/* 📱 Responsive styles */
-@media (max-width: 1200px) {
-    .main-about > * {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-about h1 {
-        font-size: 2.5rem; 
-    }
-
-    .about-details p {
-        font-size: 1.4rem; 
-    }
-
-    .main-about {
-        padding: 0 5%; 
-    }
-}
-
-@media (max-width: 480px) {
-    .main-about h1 {
-        font-size: 1.8rem; 
-    }
-
-    .about-details p {
-        font-size: 1.2rem; 
-    }
-
-    .main-about {
-        padding: 0 2rem; 
-    }
-}
-
-
-
-/*ABOUT CONTAINER  */
 
 @media (min-width: 1200px) {
     .about-container {
@@ -393,7 +180,6 @@ body{
     }
 }
 
-/* For Tablets (768px and below) */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column; 
@@ -423,7 +209,6 @@ body{
         margin-top: 20px;
     }
 }
-
 
 @media (max-width: 480px) {
     .about-container {
@@ -455,7 +240,89 @@ body{
     }
 }
 
-  
+
+
+/* miss viss */
+
+.about-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    margin-top: -30px; 
+}
+
+
+
+.about-miss-viss{
+    padding: 23px;
+    border: 1px solid rgb(194, 193, 193);
+    width: 400%;
+    height: 210px;
+    margin-left: 20px;
+    animation: slideInLeft 1s ease forwards;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about-miss-viss h3{
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.about-miss-viss-details{
+    padding: 19px;
+    margin-top: -23px;
+    margin-left: -23px;
+    height: 30px;
+    width: 115%;
+    color: white;
+    background-color: #0077ff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; 
+}
+
+.about-miss-viss-details ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 10px;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.about-miss-viss-details ul li{
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+    text-align: left;
+    padding: 4px;
+    margin-left: 130px;
+}
+
+.about-miss-viss-details ul li:hover{
+    background-color: white ;
+    color: #0077ff;
+}
+
+
+.about-container2 p{
+    font-size: 18px;
+    font-family: f;
+    word-spacing: 2px;
+    margin-top: 20px;
+}
+
+.about-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20PX;
+}
+
+.images2{
+    margin-left: 10px;
+    width: 310PX;
+    height:210PX;
+}
 
 @media (min-width: 1200px) {
     .about-container2 {
@@ -463,31 +330,26 @@ body{
         justify-content: space-between;
         align-items: center;
         margin: 50px;
-        margin-top: 100px;
+        gap: 50px;
     }
 
     .about-miss-viss {
         padding: 23px;
         border: 1px solid rgb(194, 193, 193);
-        width: 45%; 
-        height: auto;
+        width: 65%; 
+        height: 200px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .about-miss-viss h3 {
         font-size: 17px;
-        margin-top: 50px;
-        /* background-color: red; */
     }
 
     .about-miss-viss-details {
-        padding: 19px;
         margin-top: -23px;
-        margin-left: -23px;
-        height: 30px;
-        width: 108%;
+        height: 40px;
+        width: 107%;
         color: white;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     }
 
     .about-miss-viss-details ul {
@@ -495,9 +357,6 @@ body{
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        padding: 10px 0; 
-        margin-top: -20px;
-        margin-left: 0; 
     }
 
     .about-miss-viss-details ul li { 
@@ -506,7 +365,7 @@ body{
         text-align: center; 
         padding: 4px;
         cursor: pointer;
-        margin-left: 58px;
+        margin-left: 28px;
     }
 
     .about-miss-viss-details ul li:hover {
@@ -515,15 +374,15 @@ body{
     }
 
     .about-image {
-        width: 45%;
-        height: auto;
+        width: 35%;
         border-radius: 20px;
     }
 
     .images2 {
-        width: 100%;
-        height: auto;
+        width: 80%;
+        height: 220px;
         border-radius: 20px;
+        margin-left: 90px;
     }
 }
 
@@ -536,19 +395,18 @@ body{
     .about-miss-viss {
         width: 100%; 
         height: auto;
+        margin-left: 10px;
     }
 
     .about-miss-viss-details ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .about-miss-viss-details ul li {
         font-size: 18px;
-        /* background-color: red; */
-        margin-left: 58px;
+        margin-left: 28px;
     }
 
     .about-image {
@@ -559,6 +417,7 @@ body{
     .images2 {
         width: 100%; 
         height: auto;
+        margin-left: 0px;
     }
 }
 
@@ -592,3 +451,86 @@ body{
         height: auto;
     }
 }
+
+  
+/*  3*/
+
+.team-section{
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.team-section .team-heading{
+    font-size: 30px;
+    font-family: f;
+    word-spacing: 5px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 20px;    
+}
+
+.team-member{
+    text-align: center;
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    animation: slideInLeft 1s ease forwards;
+}
+
+.team-text {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;  
+    background-color: #e7e7f5;
+    line-height: 1.4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.team-text:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.team-member h2{
+    margin-top: 12px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.team-member h2:hover{
+    color: #007bff;
+}
+
+.team-member p{
+    color: #666;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+.team-member p:hover{
+    color: #0056b3;
+}
+
+
+
+
+
+
