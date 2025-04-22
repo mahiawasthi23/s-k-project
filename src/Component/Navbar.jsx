@@ -5,12 +5,13 @@ import "./navbar.css"
 const Navbar = () => {
   return (
     <nav className="navbar">
+        <img src='/logo.png'/>
         <div className='nav-contain'>
-        <Link to="/" style={{marginRight:20}} className="nav-link home">Home</Link>
-        <Link to="/about" style={{marginRight:20}} className="nav-link about">About</Link>
-        <Link to="/gallary" style={{marginRight:20}} className="nav-link gallary">Gallary</Link>
-        <Link to="/service" style={{marginRight:20}} className="nav-link service">Service</Link>
-        <Link to="/contact" style={{marginRight:60}} className="nav-link contact">Contact</Link>
+        <Link to="/" className="nav-link home">Home</Link>
+        <Link to="/about"  className="nav-link about">About</Link>
+        <Link to="/gallary"  className="nav-link gallary">Gallary</Link>
+        <Link to="/service"  className="nav-link service">Service</Link>
+        <Link to="/contact" className="nav-link contact">Contact</Link>
         </div>
     </nav>
   );
