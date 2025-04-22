@@ -133,7 +133,7 @@
   .service-section h2:hover,
   .service-section p:hover,
   .service-section li:hover {
-    color: #007bff;
+    color: #ffd700;
     cursor: pointer;
     transition: color 0.3s ease;
   }
@@ -163,7 +163,7 @@
 
 .guranty-item i{
     font-size: 2.5rem;
-    color: #007bff;
+    color: #ffd700;
     margin-bottom: 15px;
     transition: all 0.3s ease;
 }
@@ -208,7 +208,7 @@
     left: 0;
     height: 4px;
     width: 0%;
-    background-color: #007bff;
+    background-color: #ffd700;
     transition: width 0.3s ease;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -223,3 +223,41 @@
     width: 100%;
   }
   
+  .service-story{
+    width: 100%;
+    background-color: #f9fafb;
+    margin-top: 40px;
+    padding: 70px;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+
+.our-story{
+  padding: 10px;
+  text-align: center;
+
+}
+
+.our-story-headline{
+  padding: 10px;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.contact-us{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.details-service{
+  margin: auto;
+  width: 390px;
+ 
+
+}
+
+.details-service-p{
+  padding: 10px;
+  margin-left: 88px;
+}

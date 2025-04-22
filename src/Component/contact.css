@@ -1,38 +1,33 @@
-
 body{
     font-family: 'Arial', sans-serif;
     box-sizing: border-box;
-
 }
 .contact-hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/public/back-image.png);
+    background:linear-gradient(to right, rgb(218, 218, 218),rgb(241, 240, 240),rgb(242, 240, 240),rgb(254, 254, 254)); 
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     gap: 20px;
   }
-  
   .contact-info-content {
     flex: 1;
   }
-  
   .img-container {
     flex: 1;
     display: flex;
     justify-content: center;
   }
-  
   .img-container img {
     max-width: 80%;
     height: auto;
   }
-  
 .contact-heading{
-    font-size: 50px;
+    font-size: 55px;
     font-style: italic;
     font-family: f;
     letter-spacing: 1px;
@@ -41,24 +36,22 @@ body{
     word-spacing: 10px;
 }
 .contact-para{
-    font-size: 26px;
+    font-size: 32px;
     font-style: italic;
     font-family: f;
     letter-spacing: 1px;
       font-weight: 700;
     word-spacing: 2px;
 }
-
 .contact-info-content .contact-heading {
     transition: transform 0.3s ease, color 0.3s ease;
-}
 
+}
 .contact-info-content .contact-heading:hover {
     transform: scale(1.02);
     color: #ffd700;
     cursor: pointer;
 }
-  
 .contact-info-content .contact-para {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -70,7 +63,7 @@ body{
 }
 .contact-section {
     padding: 50px 5%;
-    background-color: #f4f4f9;
+    background-color: #ffffff;
 }
 .contact-container {
     display: flex;
@@ -80,15 +73,23 @@ body{
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 .contact-info {
-    background-color: rgb(57, 113, 225);
+    background-color: rgb(57, 113, 225); 
     color: white;
     position: relative;
     overflow: hidden;
 }
 .contact-details {
     margin-top: 30px;
+}
+.contact-data{
+    text-align:center;
+    font-size: 25px;
+}
+.contact-data:hover{
+    color: #d9dde1;
 }
 .contact-item {
     display: flex;
@@ -101,14 +102,17 @@ body{
 .contact-item i {
     margin-right: 15px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     transition: transform 0.3s ease;
+}
+.contact-item i:hover{
+    color: #eee8e8;
 }
 .contact-item p {
     margin-right: 15px;
     font-style: normal;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     transition: transform 0.3s ease;
 }
 .contact-info{
@@ -137,6 +141,9 @@ body{
 }
 .form-heading{
     transition: color 0.3s ease, transform 0.3s ease;
+    margin-bottom:20px;
+    text-align: center;
+    font-size:25px;
 }
 .form-heading:hover{
     color: #007bff;
@@ -159,7 +166,6 @@ body{
     border-color:#007bff;
 }
 #contact-form input:focus, #contact-form select:focus, #contact-form textarea:focus{
-    border-color:#007bff;
     box-shadow: 0 0 0 3px rgba(0, 123,255,0.25);
 }
 
@@ -192,7 +198,6 @@ body{
     text-align: center;
     transition: all 0.3s ease;
 }
-
 .location-map {
     padding: 50px 5%;
     text-align: center;
@@ -200,13 +205,43 @@ body{
 }
 .location-heading{
     transition: color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 30px;
+    font-size: 35px;
 }
 .location-heading:hover{
     color: #007bff;
     transform: translateX(5px);
 }
+.contact-item a{
+    color:white;
+    text-decoration: none;
+}
 
-
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+.select-option {
+    appearance: none;         
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    background: transparent;
+    padding-right: 30px; 
+}
+  .dropdown-icon {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    color: #555;
+  }
+  .dropdown-icon.rotate {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
 @media screen and (max-width: 768px) {
     .contact-container {
         flex-direction: column;
