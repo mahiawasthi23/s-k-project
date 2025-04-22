@@ -1,41 +1,107 @@
 .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 40px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  width: 100%;
+  overflow-x: hidden;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-title {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 2.4rem;
+}
+.footer-para {
+  max-width: 500px;
+  margin: 8px auto;
+  line-height: 24px; 
+  color: #cacdd2;
+}
+
+.socials-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.8rem 0 1rem 0;
+}
+
+.socials-link li {
+  margin: 0 8px;
+}
+
+.socials-link li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid white;
+  padding: 6px;
+  border-radius: 50%;
+  width: 30px;
+  transition: 0.3s;
+}
+
+.socials-link li a:hover {
+  background-color: rgb(57, 113, 225);
+  color: #111;
+  transform: scale(1.1);
+}
+
+.footer-menu {
+  margin-top: 15px;
+}
+.footer-menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu ul li {
+  padding-right: 8px;
+  display: block;
+}
+.f-menu li a {
+  color: #cfd2d6;
+  border: 1px solid white;
+  padding: 5px 8px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.f-menu li a:hover {
+  color: rgb(57, 113, 225);
+}
+.footer-copy {
+  background-color: #000;
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-copy p{
+  font-size: 10px;
+  margin: 0;
+  word-spacing: 1px;
+  text-transform: capitalize;
+}
+
+@media (max-width:500px){
+  .footer-menu ul{
+    display: inline;
   }
-  .footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .footer-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .footer-tagline {
-    font-size: 14px;
-    color: #ccc;
+  .footer-menu ul li{
     margin-bottom: 20px;
   }
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  .footer-links a:hover {
-    color: #ffcc00;
-  }
-  .footer-copy {
-    font-size: 12px;
-    color: #888;
-  }
-  
+}  
+
+
+

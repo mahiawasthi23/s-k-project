@@ -13,19 +13,19 @@ body{
     text-align: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     gap: 20px;
-  }
-  .contact-info-content {
+}
+.contact-info-content {
     flex: 1;
-  }
-  .img-container {
+}
+.img-container {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-  .img-container img {
+}
+.img-container img {
     max-width: 80%;
     height: auto;
-  }
+}
 .contact-heading{
     font-size: 55px;
     font-style: italic;
@@ -143,7 +143,7 @@ body{
     transition: color 0.3s ease, transform 0.3s ease;
     margin-bottom:20px;
     text-align: center;
-    font-size:25px;
+    font-size:20px;
 }
 .form-heading:hover{
     color: #007bff;
@@ -168,7 +168,6 @@ body{
 #contact-form input:focus, #contact-form select:focus, #contact-form textarea:focus{
     box-shadow: 0 0 0 3px rgba(0, 123,255,0.25);
 }
-
 .img-container{
     width:10px;
 }
@@ -207,21 +206,21 @@ body{
     transition: color 0.3s ease, transform 0.3s ease;
     margin-bottom: 30px;
     font-size: 35px;
+    color: #007bff;
 }
 .location-heading:hover{
-    color: #007bff;
+    color: rgb(4, 174, 247);
     transform: translateX(5px);
 }
 .contact-item a{
     color:white;
     text-decoration: none;
 }
-
 .select-wrapper {
     position: relative;
     display: inline-block;
     width: 100%;
-  }
+}
 .select-option {
     appearance: none;         
     -webkit-appearance: none; 
@@ -237,11 +236,10 @@ body{
     transition: transform 0.3s ease;
     pointer-events: none;
     color: #555;
-  }
-  .dropdown-icon.rotate {
+}
+.dropdown-icon.rotate {
     transform: translateY(-50%) rotate(180deg);
-  }
-  
+}
 @media screen and (max-width: 768px) {
     .contact-container {
         flex-direction: column;
