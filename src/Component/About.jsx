@@ -15,9 +15,7 @@ function About  () {
         setActiveContent("At SK Enterprises, our core values are integrity, commitment to quality, customer satisfaction, and innovation in every service we provide.");
       }
     }
-
   return (
-
     <>
     <main className='main-about'>
         <div className='about-details'>
