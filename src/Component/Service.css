@@ -88,4 +88,34 @@
 
 .service-con{
     background-color: #f4f4f9;;
-}
+} 
+
+
+.service-con {
+    background-color: #f4f4f9;
+  }
+  
+  .service-background {
+    position: relative;
+    width: 100%;
+    background-color: rgb(231, 229, 229);
+    overflow: hidden;
+  }
+  
+  .service-img {
+    width: 43%;
+    height: 45%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.9;
+    margin-left: 855px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .service-background {
+      font-size: 14px;
+      background-color: aqua;
+    }
+  }
+  
