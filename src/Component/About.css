@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
+    overflow: hi;
 }
 
 .main-about{
@@ -23,7 +24,21 @@ body{
     justify-content: center;
 }
 
+.main-about::before{
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(33, 47, 60, 0.6);
+    z-index: 0;
+}
 
+.main-about > *{
+    position: relative;
+    z-index: 1;
+}
 
 .main-about h1{
     color: white;
@@ -54,8 +69,6 @@ body{
     font-size: 2rem;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-  
   
 .about-details p:hover {
     transform: scale(1.02); 
@@ -71,10 +84,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 50px;
-    margin-top: 100px;
-   
- 
-    
+    margin-top: 100px;   
 }
 
 .about-container p{
@@ -91,8 +101,7 @@ body{
 
 .about-your{
     padding: 30px;
-    animation: slideInLeft 1s ease forwards;
-   
+    animation: slideInLeft 1s ease forwards; 
 }
 
 
@@ -107,17 +116,13 @@ body{
     }
 }
 
-
 .about-image{
     width: 100%;
     height: 100%;
     border-radius: 20PX;
     animation-delay: 0.3s;
     animation: slideInRight 1s ease forwards;
-
 }
-
-
 
 @keyframes slideInRight {
     from {
@@ -130,14 +135,11 @@ body{
     }
 }
 
-
 .images{
     width: 350PX;
     height:260PX;
     margin-left: 100px;
 }
-  
-  
 
 /* miss viss */
 
@@ -147,6 +149,7 @@ body{
     align-items: center;
     margin: 50px;
     margin-top: -30px;
+    
 }
 
 
@@ -158,6 +161,7 @@ body{
     height: 210px;
     margin-left: 20px;
     animation: slideInLeft 1s ease forwards;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    
 }
 .about-miss-viss h3{
@@ -172,8 +176,9 @@ body{
     margin-top: -23px;
     margin-left: -23px;
     height: 30px;
-    width: 106%;
-    border: 1px solid rgb(194, 193, 193);
+    width: 112%;
+    color: white;
+    background-color: #0077ff;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
 }
@@ -184,10 +189,10 @@ body{
     align-items: center;
     width: 50%;
     height: 10px;
-    /* background-color: red; */
     padding: 20px;
     margin-top: -20px;
     margin-left: -20px;
+   
 
    
 
@@ -198,14 +203,17 @@ body{
     list-style: none;
     font-size: 25px;
     text-align: left;
-    padding: 5px;
-    margin-left: -20px;
+    padding: 4px;
+    margin-left: 130px;
+    
+    
     
 
 }
 
 .about-miss-viss-details ul li:hover{
-    background-color: #0077ff;
+    background-color: white ;
+    color: #0077ff;
 }
 
 
@@ -223,11 +231,11 @@ body{
 }
 
 .images2{
-    margin-left: 20px;
+    margin-left: 10px;
     width: 310PX;
     height:210PX;
 }
-  
+
 
 /*  */
 
@@ -309,3 +317,278 @@ body{
 }
 
 
+
+
+/* 📱 Responsive styles */
+@media (max-width: 1200px) {
+    .main-about > * {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-about h1 {
+        font-size: 2.5rem; 
+    }
+
+    .about-details p {
+        font-size: 1.4rem; 
+    }
+
+    .main-about {
+        padding: 0 5%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .main-about h1 {
+        font-size: 1.8rem; 
+    }
+
+    .about-details p {
+        font-size: 1.2rem; 
+    }
+
+    .main-about {
+        padding: 0 2rem; 
+    }
+}
+
+
+
+/*ABOUT CONTAINER  */
+
+@media (min-width: 1200px) {
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+        margin-top: 100px;
+    }
+
+    .about-container p {
+        margin-top: 30px;
+        font-size: 19px;
+        font-family: f;
+        word-spacing: 2px;
+    }
+
+    .about-container h2 {
+        margin-top: -30px;
+        font-size: 30px;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        animation: slideInRight 1s ease forwards;
+    }
+
+    .images {
+        width: 350px;
+        height: 260px;
+        margin-left: 100px;
+    }
+}
+
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; 
+        margin: 30px;
+    }
+
+    .about-container p {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about-container h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .images {
+        width: 100%; 
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-image {
+        width: 100%; 
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-container {
+        flex-direction: column; 
+        margin: 20px;
+    }
+
+    .about-container p {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about-container h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .images {
+        width: 100%; 
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+  
+
+@media (min-width: 1200px) {
+    .about-container2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+        margin-top: 100px;
+    }
+
+    .about-miss-viss {
+        padding: 23px;
+        border: 1px solid rgb(194, 193, 193);
+        width: 45%; 
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .about-miss-viss h3 {
+        font-size: 17px;
+        margin-top: 50px;
+        /* background-color: red; */
+    }
+
+    .about-miss-viss-details {
+        padding: 19px;
+        margin-top: -23px;
+        margin-left: -23px;
+        height: 30px;
+        width: 108%;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .about-miss-viss-details ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0; 
+        margin-top: -20px;
+        margin-left: 0; 
+    }
+
+    .about-miss-viss-details ul li { 
+        list-style: none;
+        font-size: 20px;
+        text-align: center; 
+        padding: 4px;
+        cursor: pointer;
+        margin-left: 58px;
+    }
+
+    .about-miss-viss-details ul li:hover {
+        background-color: white;
+        color: #0077ff;
+    }
+
+    .about-image {
+        width: 45%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .images2 {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container2 {
+        flex-direction: column; 
+        margin: 30px;
+    }
+
+    .about-miss-viss {
+        width: 100%; 
+        height: auto;
+    }
+
+    .about-miss-viss-details ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .about-miss-viss-details ul li {
+        font-size: 18px;
+        /* background-color: red; */
+        margin-left: 58px;
+    }
+
+    .about-image {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .images2 {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container2 {
+        flex-direction: column; 
+        margin: 20px;
+    }
+
+    .about-miss-viss {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-miss-viss-details ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .about-miss-viss-details ul li {
+        font-size: 16px;
+    }
+
+    .about-image {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .images2 {
+        width: 100%; 
+        height: auto;
+    }
+}
