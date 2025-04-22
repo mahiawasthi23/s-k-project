@@ -1,69 +1,86 @@
-.navbar{
-    width: 100%;
-    text-align:right;
+.navbar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: relative; 
+}
+
+.navbar img {
+  width: 150px;
+}
+
+.nav-contain {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid rgb(6, 6, 174);
+}
+
+.nav-link:focus {
+  color: rgb(232, 63, 2);
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10; 
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+}
+
+
+@media (max-width: 768px) {
+  .nav-contain {
+    display: none;
+    width: 100px;  
+    flex-direction: column;
+    align-items: flex-start;  
+    position: absolute;
+    top: 60px; 
+    right: 0;  
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 20px;
-}
-.nav-contain{
-   padding: 40px;
-}
-.home{
-    text-decoration: none;
-    color: dimgrey;
-    padding: 20px;
-}
-.about{
-    text-decoration: none;
-    color: dimgrey;
-    padding: 20px;
-}
-
-.contact{
-    text-decoration: none;
-    color: dimgrey;
-    padding: 20px;
-}
-.service{
-    text-decoration: none;
-    color: dimgrey;
-    padding: 20px;
-}
-.gallary{
-    text-decoration: none;
-    color: dimgrey;
-    padding: 20px;
-}
-.nav-link {
-    position: relative;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    margin-right: 20px;
-    padding: 5px;
-  }
-  .nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px; 
-    width: 0%;
-    height: 2px;
-    background-color: #007bff;
-    transition: width 0.3s ease;
+    z-index: 5;
   }
 
-  
-  .nav-link:hover::after,
-  .nav-link.active::after {
-    width: 100%; 
+  .nav-contain.open {
+    display: flex;
   }
-  
-  .nav-link:hover {
-    color: #007bff;
+
+  .hamburger {
+    display: flex;
   }
-  
-  .nav-link.active {
-    color: #007bff;
-    font-weight: bold;
+
+  .nav-link {
+    padding: 10px;
+    width: 100%;
+    text-align: center; 
+    border-top: 1px solid #ddd; 
   }
+}
