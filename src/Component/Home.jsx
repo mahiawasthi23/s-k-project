@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -49,14 +47,9 @@ function Home() {
     alert('Thank you for your feedback!');
   };
 
-  const testimonials = [
-    { name: 'Ravi S.', text: 'Great service! My AC was fixed in 2 hours.', rating: 5 },
-    { name: 'Anjali P.', text: 'Quick and affordable. Highly recommended!', rating: 4 },
-  ];
-
   const displayedFeedbacks = showAllFeedbacks
-    ? storedFeedbacks
-    : storedFeedbacks.slice(-3).reverse();
+    ? [...storedFeedbacks].reverse()
+    : [...storedFeedbacks].slice(-3).reverse();
 
   return (
     <div className="home-contener">
@@ -125,29 +118,18 @@ function Home() {
           <img src="/AC.jpg" alt="Work 1" />
           <img src="/AC2.jpg" alt="Work 2" />
           <img src="/AC.jpg" alt="Work 3" />
-          <img src="/AC3.jpg" alt="Work 3" />
-          <img src="/AC4.avif" alt="Work 1" />
-          <img src="/AC.jpg" alt="Work 2" />
+          <img src="/AC3.jpg" alt="Work 4" />
+          <img src="/AC4.avif" alt="Work 5" />
+          <img src="/AC.jpg" alt="Work 6" />
         </div>
         <Link to="/gallary">
           <button className="home-learn-more">See More</button>
         </Link>
       </div>
 
-  
       <div className="home-testimonials">
         <h2 className="home-section-title">What Our Customers Say</h2>
         <div className="home-testimonial-grid">
-          {testimonials.map((t, i) => (
-            <div key={i} className="home-testimonial">
-              <p>"{t.text}"</p>
-              <p className="testimonial-stars">
-                {"★".repeat(t.rating)}{"☆".repeat(5 - t.rating)}
-              </p>
-              <h4>- {t.name}</h4>
-            </div>
-          ))}
-
           {displayedFeedbacks.map((item, index) => (
             <div key={index} className="home-testimonial">
               <p>"{item.text}"</p>
@@ -160,8 +142,7 @@ function Home() {
           ))}
         </div>
 
-        {/* See More / See Less Toggle */}
-        {storedFeedbacks.length >3 && (
+        {storedFeedbacks.length > 3 && (
           <button
             className="home-learn-more"
             onClick={() => setShowAllFeedbacks(!showAllFeedbacks)}
@@ -170,7 +151,6 @@ function Home() {
           </button>
         )}
 
-        {/* Feedback Form */}
         <div className="home-rating-section">
           <h3 className="home-section-title">Rate Our Service</h3>
 
@@ -221,8 +201,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
-
