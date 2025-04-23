@@ -88,7 +88,7 @@ function Contact() {
           <div className='contact-form-container'>
             <h2 className="form-heading">Fill in your AC repair requirement!</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
-              <input type="hidden" name="access_key" value="7d3eb425-04f4-4833-a462-4667c66b133d"/>
+              {/* <input type="hidden" name="access_key" value="05a455fd-09bd-4e65-856c-83f52a686f42"/> */}
               <input type="text" name="name" placeholder='Your Name' required />
               <input type="email" name="email" placeholder='Your Email' required />
               <input type="number" name="phone" placeholder='Your Phone Number' required />
@@ -107,8 +107,6 @@ function Contact() {
                 </select>
                 <i className={`fa-solid fa-chevron-down dropdown-icon ${rotateMain ? 'rotate' : ''}`}></i>
               </div>
-
-              {/* Sub-Service Dropdown */}
               {selectedMain && (
                 <div className="select-wrapper">
                   <select
