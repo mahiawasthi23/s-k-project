@@ -79,11 +79,11 @@ function Home() {
         <h2 className='home-section-title'>Gallery</h2>
         <div className="home-gallery-grid">
           <img src="/AC.jpg" alt="Work 1" />
-          <img src="/AC.jpg" alt="Work 2" />
+          <img src="/AC2.jpg" alt="Work 2" />
           <img src="/AC.jpg" alt="Work 3" />
-          <img src="/AC.jpg" alt="Work 1" />
+          <img src="/AC3.jpg" alt="Work 3" />
+          <img src="/AC4.avif" alt="Work 1" />
           <img src="/AC.jpg" alt="Work 2" />
-          <img src="/AC.jpg" alt="Work 3" />
         </div>
         <Link to="/gallary">
           <button className="home-learn-more">See More</button>
