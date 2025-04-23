@@ -21,7 +21,6 @@ const Navbar = () => {
         <Link to="/service" className="nav-link service" onClick={closeMenu}>Service</Link>
         <Link to="/contact" className="nav-link contact" onClick={closeMenu}>Contact</Link>
       </div>
-      {/* <button className="hamburger" onClick={toggleMenu}> */}
       <button className={`hamburger ${menuOpen ? 'hide' : ''}`} onClick={toggleMenu}>
         <div className="line"></div>
         <div className="line"></div>

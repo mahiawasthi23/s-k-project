@@ -56,8 +56,6 @@
 .hamburger.hide {
   display: none;
 }
-
-
 @media (max-width: 768px) {
   .nav-contain {
     display: none;
