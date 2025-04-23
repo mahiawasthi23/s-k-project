@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem 0.5rem 2rem;
   position: relative; 
 
 }
@@ -24,16 +24,17 @@
 }
 
 .nav-link {
+  font-weight: 700;
   text-decoration: none;
   color: black;
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid rgb(6, 6, 174);
+  border-bottom: 2px solid rgb(3, 3, 162);
 }
 
 .nav-link:focus {
-  color: rgb(232, 63, 2);
+  color: rgb(1, 1, 158);
 }
 
 
