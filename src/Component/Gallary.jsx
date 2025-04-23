@@ -5,8 +5,15 @@ function Gallary  ()  {
   return (
     <>
     <div className='gallary-container'>
+        <div className='container-font-details'>
+            <h1>Our Work Showcase</h1><br/>
+            <p> A Visual Journey of Our Professional Services</p>
+        </div>
+        
+        <img className='gallray-back' src='/gallary1.png'></img>
+    </div>
+    <div className='gallry-image'>
         <h1>Gallary</h1>
-        <div className='gallry-image'>
             <div className='gallry-box'>
                 <div className='gallary-item'>
                     <img className='img1' src='/AC.jpg'></img>
@@ -45,7 +52,6 @@ function Gallary  ()  {
                 </div>
             </div>
         </div>
-    </div>
     </>
   )
 
