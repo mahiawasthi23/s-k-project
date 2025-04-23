@@ -278,7 +278,7 @@ body{
     .img-container{
         flex: 3;
     }
-
+    
     .contact-item {
         display: flex;
         align-items: center;
