@@ -10,7 +10,6 @@ function Service() {
                 <h2 className="service-heading">Our Professional Services</h2>
                 <p className="service-sol">Comprehensive Home Repair and Installation Solutions</p>
                 </div>
-                
             </div>
             <ServiceList/>
         </div>
