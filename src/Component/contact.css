@@ -251,15 +251,16 @@ body{
     }
 
     .contact-heading {
-        font-size: 26px;
+        font-size: 24px;
         font-style: italic;
         font-weight: 400;
         word-spacing: 0;
         padding-top: 47px;
+        padding-left: 4px;
 
     }
     .contact-para {
-        font-size: 20px;
+        font-size: 18px;
         font-style: italic;
         letter-spacing: 1px;
         font-weight: 400;
@@ -276,5 +277,50 @@ body{
     }
     .img-container{
         flex: 3;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+    }
+    .contact-item p{
+        font-size: 12px;
+    }
+    .contact-item a{
+        font-size: 12px;
+    }
+    .contact-data{
+        font-size: 19px;
+    }
+    .contact-details {
+        margin-top: 8px;
+    }
+    .contact-item i {
+      
+        font-size: 1.2rem;
+        
+    }
+    .contact-item{
+        padding: 2px;
+    }
+    .form-heading{
+        font-size: 14px;
+    }
+    #contact-form input, #contact-form select, #contact-form textarea {
+        font-size: 11px;
+        
+    }
+    .text-btn{
+        font-family: 12px;
+        font-size: 13px;
+    }
+    .location-map {
+        padding: 30px 5%
+    }
+    .location-heading{
+        font-size: 18px;
     }
 }
