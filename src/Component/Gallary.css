@@ -2,26 +2,56 @@
     width: 100%;
     padding: 30px;
     text-align: center;
+    background:linear-gradient(to right, rgb(218, 218, 218),rgb(241, 240, 240),rgb(242, 240, 240),rgb(252, 249, 249));
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
-  
+
+  .container-font-details{
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .container-font-details:hover{
+    color: #ffd700;
+    transition: transform 0.3s ease,color 0.3s ease,text-shadow 0.3s ease;
+  }
+
+  .container-font-details h1,.container-font-details p{
+    transform: translateY(-10px);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .gallary-container .gallray-back{
+    height: 400px;
+    width: 450px;
+    margin-right: 20px;
+  }
+
   .gallry-image {
+    text-align: center;
     padding: 50px 5%;
+    margin-top: 50px;
   }
   
   .gallry-box {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
   }
 
-
-
 .gallary-item{
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+    transition: all 0.4s ease; 
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -32,4 +62,41 @@
     object-fit: cover;
     transition: all 0.4s ease;
     transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .gallary-container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .gallary-container .gallray-back {
+    margin-right: 0;
+    height: 300px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .container-font-details {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallary-item img {
+    height: 200px;
+  }
+
+  .container-font-details {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .gallry-box {
+    gap: 20px;
+  }
 }

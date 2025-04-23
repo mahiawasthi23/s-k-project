@@ -54,14 +54,14 @@
   
   .home-main .para:hover h1 {
     transform: translateY(-10px);
-    color: #ffd700;
+    color: rgb(241, 121, 9);
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
   }
 
   
   .home-main .para:hover p {
     transform: translateY(-5px);
-    color: #ffd700;
+    color: rgb(241, 121, 9);
   }
 
 
@@ -102,7 +102,7 @@
     font-size: 2.2rem; 
     text-align: center;
     margin: 1rem 0 2rem; 
-    color: #3498db; 
+    color: rgb(2, 28, 101); 
 }
 
   .home-service-grid{
@@ -137,7 +137,7 @@
     font-size: 2.4rem; 
     text-align: center;
     margin: 3.5rem 0 2rem; 
-    color: #333;
+    color: #060505;
 }
   .home-choose-us {
     display: grid;
@@ -167,7 +167,7 @@
   
   .home-choose-icon {
     font-size: 2.8rem;
-    color: #007bff;
+    color: rgb(2, 28, 101);
     margin-bottom: 1.2rem; 
     display: inline-block;
   }
@@ -207,7 +207,7 @@
   .home-service-card .icon {
     font-size: 2.8rem; 
     margin-bottom: 1.2rem; 
-    color: #007bff;
+    color: rgb(2, 28, 101);
   }
   
   .home-service-card h3 {
@@ -254,7 +254,7 @@
     content: "\2713";
     display: inline-block;
     margin-right: 0.8rem;
-    color: blue; 
+    color: rgb(2, 28, 101); 
     font-size: 1.2rem;
 }
   
@@ -319,7 +319,7 @@
 
   .home-cta-strip {
     background: linear-gradient(to right, #eff5f6, #f6f8f8); 
-    color: #00695c; 
+    color: rgb(2, 28, 101); 
     padding: 2.5rem 1.5rem;
     border-radius: 8px; 
     margin-bottom: 3.5rem;
@@ -330,7 +330,7 @@
     font-size: 2rem; 
     margin-bottom: 0.8rem;
     font-weight: 600;
-    color: #00695c;
+    color: rgb(2, 28, 101);
   }
   
   .home-cta-strip p {
