@@ -500,9 +500,10 @@ body{
     transition:color .3s
   }
   
-  .team-member p:hover{color:#0056b3}
-  
-  /* ---------- single breakpoint ---------- */
+  .team-member p:hover{
+    color:#0056b3 
+}
+
   @media(max-width:600px){
     .team-container{justify-content:center;gap:20px}
     .team-member{max-width:100%;flex:1 1 100%}
