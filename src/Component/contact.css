@@ -249,15 +249,16 @@ body{
     }
 
     .contact-heading {
-        font-size: 26px;
+        font-size: 24px;
         font-style: italic;
         font-weight: 400;
         word-spacing: 0;
         padding-top: 47px;
+        padding-left: 4px;
 
     }
     .contact-para {
-        font-size: 20px;
+        font-size: 18px;
         font-style: italic;
         letter-spacing: 1px;
         font-weight: 400;
@@ -304,7 +305,7 @@ body{
         padding: 2px;
     }
     .form-heading{
-        font-size: 11px;
+        font-size: 14px;
     }
     #contact-form input, #contact-form select, #contact-form textarea {
         font-size: 11px;
@@ -312,6 +313,7 @@ body{
     }
     .text-btn{
         font-family: 12px;
+        font-size: 13px;
     }
     .location-map {
         padding: 30px 5%
