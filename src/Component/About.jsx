@@ -45,8 +45,6 @@ function About  () {
             </div>
             <h3>Since 2018, providing quality home and commercial services with a commitment to excellence and customer satisfaction.
             Gopal Mahasal</h3>
-            {/* <p>SK Enterprises was founded in 2010 with a simple mission: to provide reliable, efficient, and affordable home repair and installation services. What started as a small local business has grown into a trusted name in home maintenance.</p> */}
-
                 {activeContent && (
                 <div className='about-dynamic-text'>
                     <p>{activeContent}</p>
