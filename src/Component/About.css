@@ -1,46 +1,29 @@
-
-*,
-*::before,
-*::after{box-sizing:border-box}
-
-body{
-  margin:0;
-  padding:0;
-  font-family:Arial,sans-serif;
-  letter-spacing:1px;
-  overflow-x:hidden
-}
-
 .main-about{
     background-image: url('/cpoy_AC.png');
-    background-size: cover;
-    background-position: bottom;
-    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top;
-    width: 100%;
-    height: 100vh;
-    min-height: 90vh;
+    background-position: center;
+    min-height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .main-about::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(33,47,60,.35);
-  z-index:0
     content: "";
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgba(33, 47, 60, 0.3);
+    background: rgba(33, 47, 60, 0.3);
     z-index: 0;
 }
 
@@ -55,7 +38,7 @@ body{
     text-shadow: 2px 0 2px black;
     padding: 0 1rem;
     font-family: f;
-    transition: transform 0.3s ease,color     0.3s ease,
+    transition: transform 0.3s ease,color 0.3s ease,
     text-shadow 0.3s ease;
     font-size: 4rem;
 }
@@ -84,27 +67,23 @@ body{
     color: rgb(214, 106, 5);
 }
 
-
-
-
+/* 2 */
 .about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
-    margin-top: 100px; 
+    margin-bottom: 100px; 
 }
-
 .about-container p{
     margin-top: 30px;
     font-size: 19px;
     font-family: f;
     word-spacing: 2px;
 }
-
 .about-container h2{
     margin-top: -30px;
-    font-size: 30px;
+    font-size: 30px;;
 }
 
 .about-your{
@@ -247,200 +226,102 @@ body{
 /*  */
 
 
-
-
-.about-container2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px;
-    margin-top: -30px; 
-}
-
-.about-miss-viss{
-    padding: 23px;
-    border: 1px solid rgb(194, 193, 193);
-    width: 400%;
-    height: 210px;
-    margin-left: 20px;
-    animation: slideInLeft 1s ease forwards;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.about-miss-viss h3{
-    font-size: 17px;
-    margin-top: 30px;
-}
-
-.about-miss-viss-details{
-    padding: 19px;
-    margin-top: -23px;
-    margin-left: -23px;
-    height: 30px;
-    width: 115%;
-    color: white;
-    background-color: #0077ff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; 
-}
-
-.about-miss-viss-details ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 10px;
-    padding: 20px;
-    margin-top: -20px;
-    margin-left: -20px;
-}
-
-.about-miss-viss-details ul li{
-    gap: 20px;
-    list-style: none;
-    font-size: 25px;
-    text-align: left;
-    padding: 4px;
-    margin-left: 130px;
-}
-
-.about-miss-viss-details ul li:hover{
-    background-color: white ;
-    color: #0077ff;
-}
-
-.about-container2 p{
-    font-size: 18px;
-    font-family: f;
-    word-spacing: 2px;
-    margin-top: 20px;
-}
-
-.about-image{
+.mission-container{
     width: 100%;
-    height: 100%;
-    border-radius: 20PX;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 90px;
 }
 
-.images2{
-    margin-left: 10px;
-    width: 310PX;
-    height:210PX;
+.mission-home{
+    font-size: 36px;
+    font-family: "PingFang SC", sans-serif;  
+    font-weight: 700;
+    color: #0057A6;
+    line-height: 40px;
 }
 
-.about-container2{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:50px;
-    gap:50px
-  }
-  
-  .about-miss-viss{
-    padding:23px;
-    border:1px solid #c2c1c1;
-    width:100%;
-    height:200px;
-    box-shadow:0 3px 8px rgba(0,0,0,.24)
-  }
-  
-  .about-miss-viss h3{
-    font-size:17px;
-    margin-top:30px
-  }
-  
-  .about-miss-viss-details{
-    padding:19px;
-    margin-top:-23px;
-    height:40px;
-    width:106%;
-    color:#fff;
-    background:#0077ff;
-    box-shadow:0 6px 24px rgba(0,0,0,.05),0 0 0 1px rgba(0,0,0,.08)
-  }
-  
-  .about-miss-viss-details ul{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    width:100%
-  }
-  
-  .about-miss-viss-details ul li{
-    list-style:none;
-    font-size:20px;
-    padding:4px;
-    cursor:pointer
-  }
-  
-  .about-miss-viss-details ul li:hover{
-    background:#fff;
-    color:#0077ff
-  }
-  
-  .about-container2 p{
-    font-size:18px;
-    font-family:f;
-    word-spacing:2px;
-    margin-top:20px
-  }
-  
-  .about-image{
-    width:35%;
-    border-radius:20px
-  }
-  
-  .images2{
-    width:80%;
-    height:220px;
-    border-radius:20px;
-    margin-left:90px
-  }
-  
+.mission-home p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 
-  @media(max-width:768px){
-    .about-container2{
-      flex-direction:column;
-      margin:30px;
-      gap:30px
-    }
-  
-    .about-miss-viss{
-      width:100%;
-      height:auto;
-      margin-left:0;
-      padding:0;
-    }
+.about-miision-item{
+    margin-top: 70px;
+    margin-left: 15%;
 
-    .about-miss-viss h3, .about-miss-viss p{
-        padding: 10px;
-        font-size: 15px; 
-    }
-  
-    .about-miss-viss-details{
-      width:100%;
-      height:auto;
-      margin-top:-10px;
-      margin-left: 0;
-      ;
-    }
-  
-    .about-miss-viss-details ul{
-      justify-content:space-between;
-    }
-  
-    .about-miss-viss-details ul li{
-      font-size:18px;
-      margin:0 5px;
-      margin-top: 10px;
-    }
-  
-    .about-image,
-    .images2{
-      width:100%;
-      height:auto;
-      margin:0
-    }
-  }
-  
+
+}
+
+.about-miision-item .mission-item-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.mission-item-col{
+    height: 262px;
+
+}
+
+.mission-item-col .about-mission-data {
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+ 
+.about-mission-data p{
+    margin-top: 20px; 
+}
+
+.about-mission-data h3{
+    margin-top: 20px; 
+}
+
+
+
+
+
+.mission-item-col .about-mission-data{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.about-mission-data i,
+.about-mission-data h3,
+.about-mission-data p{
+    transform: translateY(0);
+    transition: transform .3s ease-in-out;
+}
+
+
+
+/* HOVER STATE */
+.about-mission-data:hover i  { transform: translateY(-8px); }
+.about-mission-data:hover h3 { transform: translateY(-6px); }
+.about-mission-data:hover p  { transform: translateY(-4px); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 /*  3*/
 .team-section{
