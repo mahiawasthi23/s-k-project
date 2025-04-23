@@ -66,5 +66,8 @@
     .service-heding p {
       font-size: 18px;
     }
+    .service-background{
+      min-height: 0;
+    }
   }
   

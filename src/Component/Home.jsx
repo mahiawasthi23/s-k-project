@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
@@ -9,10 +10,45 @@ function Home() {
     { icon: '💨', title: 'Cassette AC Maintenance' },
   ];
 
-  const testimonials = [
-    { name: 'Ravi S.', text: 'Great service! My AC was fixed in 2 hours.' },
-    { name: 'Anjali P.', text: 'Quick and affordable. Highly recommended!' },
-  ];
+  const [selectedRating, setSelectedRating] = useState(0);
+  const [feedbackText, setFeedbackText] = useState('');
+  const [userName, setUserName] = useState('');
+  const [storedFeedbacks, setStoredFeedbacks] = useState([]);
+  const [showAllFeedbacks, setShowAllFeedbacks] = useState(false);
+
+  useEffect(() => {
+    const saved = JSON.parse(localStorage.getItem('feedbacks')) || [];
+    setStoredFeedbacks(saved);
+  }, []);
+
+  const handleStarClick = (star) => {
+    setSelectedRating(star);
+  };
+
+  const submitFeedback = () => {
+    if (selectedRating === 0 || feedbackText.trim() === '' || userName.trim() === '') {
+      alert('Please fill out all fields and select a rating.');
+      return;
+    }
+    const newFeedback = {
+      name: userName,
+      rating: selectedRating,
+      text: feedbackText,
+      date: new Date().toLocaleString()
+    };
+
+    const updatedFeedbacks = [...storedFeedbacks, newFeedback];
+    setStoredFeedbacks(updatedFeedbacks);
+    localStorage.setItem('feedbacks', JSON.stringify(updatedFeedbacks));
+    setFeedbackText('');
+    setUserName('');
+    setSelectedRating(0);
+    alert('Thank you for your feedback!');
+  };
+
+  const displayedFeedbacks = showAllFeedbacks
+    ? [...storedFeedbacks].reverse()
+    : [...storedFeedbacks].slice(-3).reverse();
 
   return (
     <div className="home-contener">
@@ -50,30 +86,30 @@ function Home() {
       </div>
 
       <div className="choose-us-section">
-      <h2 className="home-section-title">Why Choose Us</h2>
-<div className="home-choose-us">
-  <div className="home-choose-card">
-    <i className="home-choose-icon">✅</i>
-    <h4>Trusted Technicians</h4>
-    <p>Experienced and background-verified service professionals.</p>
-  </div>
-  <div className="home-choose-card">
-    <i className="home-choose-icon">⚡</i>
-    <h4>Quick Response</h4>
-    <p>Fast and efficient service scheduling with real-time support.</p>
-  </div>
-  <div className="home-choose-card">
-    <i className="home-choose-icon">💰</i>
-    <h4>Affordable Prices</h4>
-    <p>High-quality service at budget-friendly rates.</p>
-  </div>
-  <div className="home-choose-card">
-    <i className="home-choose-icon">🛡️</i>
-    <h4>Service Guarantee</h4>
-    <p>We stand by our work with a service warranty.</p>
-  </div>
-</div>
-</div>
+        <h2 className="home-section-title">Why Choose Us</h2>
+        <div className="home-choose-us">
+          <div className="home-choose-card">
+            <i className="home-choose-icon">✅</i>
+            <h4>Trusted Technicians</h4>
+            <p>Experienced and background-verified service professionals.</p>
+          </div>
+          <div className="home-choose-card">
+            <i className="home-choose-icon">⚡</i>
+            <h4>Quick Response</h4>
+            <p>Fast and efficient service scheduling with real-time support.</p>
+          </div>
+          <div className="home-choose-card">
+            <i className="home-choose-icon">💰</i>
+            <h4>Affordable Prices</h4>
+            <p>High-quality service at budget-friendly rates.</p>
+          </div>
+          <div className="home-choose-card">
+            <i className="home-choose-icon">🛡️</i>
+            <h4>Service Guarantee</h4>
+            <p>We stand by our work with a service warranty.</p>
+          </div>
+        </div>
+      </div>
 
       <div className="home-gallery-preview">
         <h2 className='home-section-title'>Gallery</h2>
@@ -81,9 +117,9 @@ function Home() {
           <img src="/AC.jpg" alt="Work 1" />
           <img src="/AC2.jpg" alt="Work 2" />
           <img src="/AC.jpg" alt="Work 3" />
-          <img src="/AC3.jpg" alt="Work 3" />
-          <img src="/AC4.avif" alt="Work 1" />
-          <img src="/AC.jpg" alt="Work 2" />
+          <img src="/AC3.jpg" alt="Work 4" />
+          <img src="/AC4.avif" alt="Work 5" />
+          <img src="/AC.jpg" alt="Work 6" />
         </div>
         <Link to="/gallary">
           <button className="home-learn-more">See More</button>
@@ -91,14 +127,64 @@ function Home() {
       </div>
 
       <div className="home-testimonials">
-        <h2 className='home-section-title'>What Our Customers Say</h2>
+        <h2 className="home-section-title">What Our Customers Say</h2>
         <div className="home-testimonial-grid">
-          {testimonials.map((t, i) => (
-            <div key={i} className="home-testimonial">
-              <p>"{t.text}"</p>
-              <h4>- {t.name}</h4>
+          {displayedFeedbacks.map((item, index) => (
+            <div key={index} className="home-testimonial">
+              <p>"{item.text}"</p>
+              <p className="testimonial-stars">
+                {"★".repeat(item.rating)}{"☆".repeat(5 - item.rating)}
+              </p>
+              <h4>- {item.name}</h4>
+              <small>{item.date}</small>
             </div>
           ))}
+        </div>
+
+        {storedFeedbacks.length > 3 && (
+          <button
+            className="home-learn-more"
+            onClick={() => setShowAllFeedbacks(!showAllFeedbacks)}
+          >
+            {showAllFeedbacks ? 'Show Less' : 'See More'}
+          </button>
+        )}
+
+        <div className="home-rating-section">
+          <h3 className="home-section-title">Rate Our Service</h3>
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            value={userName}
+            className="home-name-input"
+            onChange={(e) => setUserName(e.target.value)}
+          />
+
+          <div className="rating-stars" id="star-container">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <span
+                key={star}
+                data-star={star}
+                className={`star ${selectedRating >= star ? 'selected' : ''}`}
+                onClick={() => handleStarClick(star)}
+              >
+                ★
+              </span>
+            ))}
+          </div>
+
+          <textarea
+            id="feedbackText"
+            placeholder="Write your feedback here..."
+            className="home-feedback-text"
+            value={feedbackText}
+            onChange={(e) => setFeedbackText(e.target.value)}
+          ></textarea>
+
+          <button onClick={submitFeedback} className="home-learn-more">
+            Submit Feedback
+          </button>
         </div>
       </div>
 
@@ -114,4 +200,3 @@ function Home() {
 }
 
 export default Home;
-
