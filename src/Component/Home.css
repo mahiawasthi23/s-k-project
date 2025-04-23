@@ -40,12 +40,10 @@
     background: rgba(33, 47, 60, 0.3);
     z-index: 0;
   }
-  
   .home-main > * {
     position: relative;
     z-index: 1;
   }
-  
   .home-main .para h1,
   .home-main .para p,
    .home-learn-more{
