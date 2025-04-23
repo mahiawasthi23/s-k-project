@@ -9,13 +9,10 @@
   align-items: center;
   padding: 1rem 2rem 0.5rem 2rem;
   position: relative; 
-
 }
-
 .navbar img {
-  width: 150px;
+  width:150px;
 }
-
 .nav-contain {
   display: flex;
   justify-content: space-between;
