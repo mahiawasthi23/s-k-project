@@ -71,7 +71,6 @@
 
 
 .service-heding h2:hover {
-    color: #ffd700;
     cursor: pointer;
 }
 
@@ -80,7 +79,6 @@
 
 }
 .service-heding p:hover {
-    color: #ffd700;
     cursor: pointer;
     opacity: 0.9; 
 } 
