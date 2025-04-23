@@ -3,17 +3,14 @@
     width: 100%;
     object-fit: cover;
 }
-
-
-
 .service-background {
     position:relative;
     width: 100%;
     background-color: rgb(246, 252, 252);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid salmon;
     overflow: hidden;
   }
-  
   .service-img {
     width: 43%;
     height: 45%;
@@ -47,7 +44,7 @@
     top: 50%;
     left: 28%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 30px;
     font-style: italic;
     letter-spacing: 1px;
   }
@@ -56,7 +53,7 @@
     top: 61%;
     left: 28%;
     transform: translate(-50%, -50%);
-    font-size: 23px;
+    font-size: 20px;
     font-style: italic;
     letter-spacing: 1px;
     word-spacing: 2px;
@@ -87,16 +84,8 @@
     background-color: #f4f4f9;;
 } 
 
-
 .service-con {
     background-color: #f4f4f9;
-  }
-  
-  .service-background {
-    position: relative;
-    width: 100%;
-    background-color: rgb(231, 229, 229);
-    overflow: hidden;
   }
   
   .service-img {
