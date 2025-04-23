@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className='nav_logo'>
-        <img src='/S_logo.png' alt="logo" />
+        <img src='/SK_logo.png' alt="logo" />
       </div>
       <div className={`nav-contain ${menuOpen ? 'open' : ''}`}>
         <Link to="/" className="nav-link home">Home</Link>

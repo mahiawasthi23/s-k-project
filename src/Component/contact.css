@@ -247,4 +247,32 @@ body{
     .contact-info, .contact-form-container {
         width: 100%;
     }
+
+    .contact-heading {
+        font-size: 26px;
+        font-style: italic;
+        font-weight: 400;
+        word-spacing: 0;
+        padding-top: 47px;
+
+    }
+    .contact-para {
+        font-size: 20px;
+        font-style: italic;
+        letter-spacing: 1px;
+        font-weight: 400;
+        padding-bottom: 79px;
+        word-spacing: 0;
+    }
+    .contact-info-content {
+        flex: 3;
+    }
+
+    .img-container img {
+        max-width: 97%;
+    
+    }
+    .img-container{
+        flex: 3;
+    }
 }

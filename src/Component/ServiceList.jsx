@@ -53,7 +53,7 @@ function ServiceList(){
                         </div>
                         <div className="card">
                             <i className="fas fa-clock icon"></i>
-                            <p className="text">24/7 Emergency Support</p>
+                            <p className="text">Hours - Mon - Sat 9:30 am to 6:00 pm</p>
                         </div>
                         <div className="card">
                             <i className="fas fa-tools icon"></i>
