@@ -54,7 +54,6 @@ function Gallary  ()  {
         </div>
     </>
   )
-
 }
 export default Gallary
 
