@@ -10,11 +10,10 @@ const Footer = () => {
 
         <ul className="socials-link">
           <li><a href="#" className="fab fa-facebook-f"></a></li>
-          <li><a href="#" className="fab fa-twitter"></a></li>
+          <li><a href="#" className="fa-brands fa-instagram"></a></li>        
           <li><a href="#" className="fab fa-google"></a></li>
           <li><a href="#" className="fab fa-youtube"></a></li>
         </ul>
-
         <div className="footer-menu">
         <ul className="f-menu">
           <li><Link to="/">Home</Link></li>
