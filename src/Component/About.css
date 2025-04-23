@@ -1,43 +1,35 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    letter-spacing: 1px;
-    overflow: hi;
-}
-
 .main-about{
     background-image: url('/cpoy_AC.png');
-    background-size: cover;
-    background-position: bottom;
-    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top;
-    width: 100%;
-    height: 100vh;
-    min-height: 90vh;
+    background-position: center;
+    min-height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .main-about::before{
     content: "";
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:rgba(33, 47, 60, 0.3);
+    background: rgba(33, 47, 60, 0.3);
     z-index: 0;
 }
 
-.main-about > *{
-    position: relative;
-    z-index: 1;
+.main-about>*{
+  position:relative;
+  z-index:1
 }
 
 .main-about h1{
@@ -46,7 +38,7 @@ body{
     text-shadow: 2px 0 2px black;
     padding: 0 1rem;
     font-family: f;
-    transition: transform 0.3s ease,color     0.3s ease,
+    transition: transform 0.3s ease,color 0.3s ease,
     text-shadow 0.3s ease;
     font-size: 4rem;
 }
@@ -60,14 +52,12 @@ body{
 }
 
 .about-details p{
-    text-shadow: 2px 0 2px black;
-    padding: 0 1rem;
-    margin-left: 100px;
-    color: white;
-    margin-top: 10px;
-    word-spacing: 2px;
-    font-size: 2rem;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  color:#fff;
+  text-shadow:2px 0 2px #000;
+  font-size:clamp(1rem,2.5vw + .4rem,2rem);
+  max-width:60ch;
+  margin:10px 0 0;
+  transition:transform .3s ease,opacity .3s ease,color .3s ease
 }
 
 .about-details p:hover {
@@ -77,27 +67,23 @@ body{
     color: rgb(214, 106, 5);
 }
 
-
-
-
+/* 2 */
 .about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
-    margin-top: 100px; 
+    margin-bottom: 100px; 
 }
-
 .about-container p{
     margin-top: 30px;
     font-size: 19px;
     font-family: f;
     word-spacing: 2px;
 }
-
 .about-container h2{
     margin-top: -30px;
-    font-size: 30px;
+    font-size: 30px;;
 }
 
 .about-your{
@@ -125,7 +111,6 @@ body{
     animation: slideInRight 1s ease forwards;
 }
 
-
 @keyframes slideInRight {
     from {
         transform: translateX(100px);
@@ -137,13 +122,11 @@ body{
     }
 }
 
-
 .images{
     width: 350PX;
     height:260PX;
     margin-left: 100px;
 }
-
 
 @media (min-width: 1200px) {
     .about-container {
@@ -240,296 +223,179 @@ body{
     }
 }
 
+/*  */
 
 
-
-
-.about-container2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px;
-    margin-top: -30px; 
-}
-
-
-
-.about-miss-viss{
-    padding: 23px;
-    border: 1px solid rgb(194, 193, 193);
-    width: 400%;
-    height: 210px;
-    margin-left: 20px;
-    animation: slideInLeft 1s ease forwards;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.about-miss-viss h3{
-    font-size: 17px;
-    margin-top: 30px;
-}
-
-.about-miss-viss-details{
-    padding: 19px;
-    margin-top: -23px;
-    margin-left: -23px;
-    height: 30px;
-    width: 115%;
-    color: white;
-    background-color: #0077ff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; 
-}
-
-.about-miss-viss-details ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 10px;
-    padding: 20px;
-    margin-top: -20px;
-    margin-left: -20px;
-}
-
-.about-miss-viss-details ul li{
-    gap: 20px;
-    list-style: none;
-    font-size: 25px;
-    text-align: left;
-    padding: 4px;
-    margin-left: 130px;
-}
-
-.about-miss-viss-details ul li:hover{
-    background-color: white ;
-    color: #0077ff;
-}
-
-
-.about-container2 p{
-    font-size: 18px;
-    font-family: f;
-    word-spacing: 2px;
-    margin-top: 20px;
-}
-
-.about-image{
+.mission-container{
     width: 100%;
-    height: 100%;
-    border-radius: 20PX;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 90px;
 }
 
-.images2{
-    margin-left: 10px;
-    width: 310PX;
-    height:210PX;
+.mission-home{
+    font-size: 36px;
+    font-family: "PingFang SC", sans-serif;  
+    font-weight: 700;
+    color: #0057A6;
+    line-height: 40px;
 }
 
-@media (min-width: 1200px) {
-    .about-container2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        gap: 50px;
-    }
-
-    .about-miss-viss {
-        padding: 23px;
-        border: 1px solid rgb(194, 193, 193);
-        width: 65%; 
-        height: 200px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-
-    .about-miss-viss h3 {
-        font-size: 17px;
-    }
-
-    .about-miss-viss-details {
-        margin-top: -23px;
-        height: 40px;
-        width: 107%;
-        color: white;
-    }
-
-    .about-miss-viss-details ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    .about-miss-viss-details ul li { 
-        list-style: none;
-        font-size: 20px;
-        text-align: center; 
-        padding: 4px;
-        cursor: pointer;
-        margin-left: 28px;
-    }
-
-    .about-miss-viss-details ul li:hover {
-        background-color: white;
-        color: #0077ff;
-    }
-
-    .about-image {
-        width: 35%;
-        border-radius: 20px;
-    }
-
-    .images2 {
-        width: 80%;
-        height: 220px;
-        border-radius: 20px;
-        margin-left: 90px;
-    }
+.mission-home p{
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .about-container2 {
-        flex-direction: column; 
-        margin: 30px;
-    }
+.about-miision-item{
+    margin-top: 70px;
+    margin-left: 15%;
 
-    .about-miss-viss {
-        width: 100%; 
-        height: auto;
-        margin-left: 10px;
-    }
 
-    .about-miss-viss-details ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .about-miss-viss-details ul li {
-        font-size: 18px;
-        margin-left: 28px;
-    }
-
-    .about-image {
-        width: 100%; 
-        margin-top: 20px;
-    }
-
-    .images2 {
-        width: 100%; 
-        height: auto;
-        margin-left: 0px;
-    }
 }
 
-@media (max-width: 480px) {
-    .about-container2 {
-        flex-direction: column; 
-        margin: 20px;
-    }
+.about-miision-item .mission-item-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-right: -15px;
+    margin-left: -15px;
 
-    .about-miss-viss {
-        width: 100%;
-        height: auto;
-    }
-
-    .about-miss-viss-details ul {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .about-miss-viss-details ul li {
-        font-size: 16px;
-    }
-
-    .about-image {
-        width: 100%; 
-        margin-top: 20px;
-    }
-
-    .images2 {
-        width: 100%; 
-        height: auto;
-    }
 }
+
+.mission-item-col{
+    height: 262px;
+
+}
+
+.mission-item-col .about-mission-data {
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+ 
+.about-mission-data p{
+    margin-top: 20px; 
+}
+
+.about-mission-data h3{
+    margin-top: 20px; 
+}
+
+
+
+
+
+.mission-item-col .about-mission-data{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.about-mission-data i,
+.about-mission-data h3,
+.about-mission-data p{
+    transform: translateY(0);
+    transition: transform .3s ease-in-out;
+}
+
+
+
+/* HOVER STATE */
+.about-mission-data:hover i  { transform: translateY(-8px); }
+.about-mission-data:hover h3 { transform: translateY(-6px); }
+.about-mission-data:hover p  { transform: translateY(-4px); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 /*  3*/
-
 .team-section{
-    padding: 50px 5%;
-    text-align: center;
+    padding:50px 5%;
+    text-align:center
+  }
+  
+  .team-heading{
+    font-size:clamp(1.5rem,4vw,2rem);
+    font-family:f;
+    word-spacing:5px
+  }
+  
+  .team-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:60px
+  }
+  
+  .team-member{
+    flex:1 1 280px;  
+    max-width:350px;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.4s;
+    position:relative;
+    overflow:hidden
+  }
+  
+  .team-text{
+    width:100%;
+    min-height:220px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:clamp(.8rem,2.5vw,.9rem);
+    padding:20px;
+    background:#e7e7f5;
+    line-height:1.4;
+    border-radius:20px;
+    box-sizing:border-box
+  }
+  
+  .team-text:hover{
+    box-shadow:0 6px 12px -2px rgba(50,50,93,.25),0 3px 7px -3px rgba(0,0,0,.3)
+  }
+  
+  .team-member h2{
+    margin-top:12px;
+    color:#333;
+    font-size:clamp(1rem,3vw,1.25rem);
+    transition:color .3s
+  }
+  
+  .team-member h2:hover{color:#007bff}
+  
+  .team-member p{
+    color:#666;
+    margin-top:5px;
+    font-size:clamp(.85rem,2.5vw,1rem);
+    transition:color .3s
+  }
+  
+  .team-member p:hover{
+    color:#0056b3 
 }
 
-.team-section .team-heading{
-    font-size: 30px;
-    font-family: f;
-    word-spacing: 5px;
-}
-
-.team-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-    flex-wrap: wrap;
-    gap: 20px;    
-}
-
-.team-member{
-    text-align: center;
-    width: 350px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    animation: slideInLeft 1s ease forwards;
-}
-
-.team-text {
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    padding: 20px;  
-    background-color: #e7e7f5;
-    line-height: 1.4;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.team-text:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.team-member h2{
-    margin-top: 12px;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.team-member h2:hover{
-    color: #007bff;
-}
-
-.team-member p{
-    color: #666;
-    margin-top: 5px;
-    transition: color 0.3s ease;
-}
-
-.team-member p:hover{
-    color: #0056b3;
-}
-
-
-
-
-
-
+  @media(max-width:600px){
+    .team-container{justify-content:center;gap:20px}
+    .team-member{max-width:100%;flex:1 1 100%}
+  }
+  

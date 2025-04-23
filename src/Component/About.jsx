@@ -34,29 +34,76 @@ function About  () {
         </div>
     </div>
 
-    <div className='about-container2'> 
-        <div className='about-miss-viss'>
-            <div className='about-miss-viss-details'>
-                <ul>
-                    <li onClick={() => handleClick('vision')}>Vision</li>
-                    <li onClick={() => handleClick('mission')}>Mission</li>
-                    <li onClick={() => handleClick('value')}>Value</li>
-                </ul>
-            </div>
-            <h3>Since 2018, providing quality home and commercial services with a commitment to excellence and customer satisfaction.
-            Gopal Mahasal</h3>
-            {/* <p>SK Enterprises was founded in 2010 with a simple mission: to provide reliable, efficient, and affordable home repair and installation services. What started as a small local business has grown into a trusted name in home maintenance.</p> */}
 
-                {activeContent && (
-                <div className='about-dynamic-text'>
-                    <p>{activeContent}</p>
-                </div>
-                )}
+
+    <div className='mission-container'>
+      <div className='mission-home'>
+        <p>Our Mission </p>
+      </div>
+      <div className='about-miision-item'>
+        <div className='mission-item-row'>
+
+          <div className='mission-item-col'>
+            <div className='about-mission-data'>
+            <i className="about-mission-icon">
+              <img src="/swift.png" alt="Download icon" />
+            </i>
+              <h3>Swift</h3>
+              <p>uick Repair</p>
+              <p>Immediate Response</p>
+              <p>Timely Support</p>
+            </div>
+          </div>
+
+          <div className='mission-item-col'>
+            <div className='about-mission-data'>
+            <i className="about-mission-icon">
+              <img src="/Professional.png" alt="Download icon" />
+            </i>
+              <h3>Professional</h3>
+              <p>Professional service</p>
+              <p>Professional techniques</p>
+              <p>Professional management</p>
+            </div>
+          </div>
+
+          <div className='mission-item-col'>
+            <div className='about-mission-data'>
+            <i className="about-mission-icon">
+              <img src="/Reliable.png" alt="Download icon" />
+            </i>
+              <h3>Reliable</h3>
+              <p>Original parts</p>
+              <p>High quality</p>
+              <p>Fair price</p>
+            </div>
+          </div>
+
+          <div className='mission-item-col'>
+            <div className='about-mission-data'>
+            <i className="about-mission-icon">
+              <img src="/valuable.png" alt="Download icon" />
+            </i>
+              <h3>Valuable</h3>
+              <p>Satisfying</p>
+              <p>Humanistic</p>
+              <p>Value-added</p>
+            </div>
+          </div>
         </div>
-        <div className='about-image'>
-            <img src='/repairing-service.png' className='images2'></img>
-        </div>
+      </div>
     </div>
+
+    
+
+
+
+
+
+
+
+
+
    <section className='team-section'>
     <h2 className='team-heading'>We're Here to Keep You Cool & Comfortable</h2>
     <div className='team-container'>
