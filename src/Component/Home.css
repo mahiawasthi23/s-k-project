@@ -448,4 +448,52 @@
 
   
   
+  .home-rating-section {
+    margin-top: 50px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .rating-stars {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    cursor: pointer;
+    color: lightgray;
+  }
+  
+  .star:hover,
+  .star.selected,
+  .star.active {
+    color: gold;
+  }
+  
+  .home-feedback-text {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    resize: none;
+    height: 80px;
+  }
+  
+  .feedback-item {
+    margin-top: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+  }
+  
+  .star.selected {
+    color: gold;
+  }
   
