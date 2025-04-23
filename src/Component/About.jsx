@@ -55,8 +55,6 @@ function About  () {
             <img src='/repairing-service.png' className='images2'></img>
         </div>
     </div>
-
-
    <section className='team-section'>
     <h2 className='team-heading'>We're Here to Keep You Cool & Comfortable</h2>
     <div className='team-container'>
