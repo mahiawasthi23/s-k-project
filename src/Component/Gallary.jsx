@@ -13,10 +13,9 @@ function Gallary  ()  {
         <img className='gallray-back' src='/gallary1.png'></img>
     </div>
     <div className='gallry-image'>
-        <h1>Gallary</h1>
             <div className='gallry-box'>
                 <div className='gallary-item'>
-                    <img className='img1' src='/AC.jpg'></img>
+                    <img className='img1' src='/ACImage0.jpg'></img>
                 </div>
                 
                 <div className='gallary-item'>
@@ -24,32 +23,57 @@ function Gallary  ()  {
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage1.jpg'></img>    
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage5.jpg'></img>    
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage6.jpg'></img>    
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage7.jpg'></img>    
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage8.jpg'></img>    
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage9.jpg'></img>    
                 </div>
 
                 <div className='gallary-item'>
-                    <img className='img3' src='image.png'></img>    
+                    <img className='img3' src='/ACImage12.jpg'></img>    
                 </div>
+
+                <div className='gallary-item'>
+                    <img className='img3' src='/ACImage13.jpg'></img>    
+                </div>
+
+                <div className='gallary-item'>
+                    <img className='img3' src='/ACImage14.jpg'></img>    
+                </div>
+
+                <div className='gallary-item'>
+                    <img className='img3' src='/ACImage15.jpg'></img>    
+                </div>
+
+                <div className='gallary-item'>
+                    <img className='img3' src='/ACImage16.jpg'></img>    
+                </div>
+
+                <div className='gallary-item'>
+                    <img className='img3' src='/ACImage17.jpg'></img>    
+                </div>
+
+                <div className='gallary-item'>
+                    <img className='img3' src='/ACImage18.jpg'></img>    
+                </div>
+                
             </div>
         </div>
     </>
