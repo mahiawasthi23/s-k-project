@@ -116,10 +116,10 @@ function Home() {
         <div className="home-gallery-grid">
           <img src="/AC.jpg" alt="Work 1" />
           <img src="/AC2.jpg" alt="Work 2" />
-          <img src="/AC.jpg" alt="Work 3" />
+          <img src="/AC4.jpg" alt="Work 3" />
           <img src="/AC3.jpg" alt="Work 4" />
           <img src="/AC4.avif" alt="Work 5" />
-          <img src="/AC.jpg" alt="Work 6" />
+          <img src="/ACImage1.jpg" alt="Work 6" />
         </div>
         <Link to="/gallary">
           <button className="home-learn-more">See More</button>
