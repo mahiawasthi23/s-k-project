@@ -30,7 +30,6 @@ function Home() {
       alert('Please fill out all fields and select a rating.');
       return;
     }
-
     const newFeedback = {
       name: userName,
       rating: selectedRating,
