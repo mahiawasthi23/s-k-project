@@ -41,7 +41,6 @@ function About  () {
         <p>Our Mission </p>
       </div>
       <div className='about-miision-item'>
-        <div className='mission-item-row'>
 
           <div className='mission-item-col' >
             <div className='about-mission-data'>
@@ -89,7 +88,6 @@ function About  () {
               <p>Humanistic</p>
               <p>Value-added</p>
             </div>
-          </div>
         </div>
       </div>
     </div>
