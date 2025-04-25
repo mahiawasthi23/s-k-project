@@ -49,7 +49,7 @@ function About  () {
               <img src="/swift.png" alt="Download icon" />
             </i>
               <h3>Swift</h3>
-              <p>uick Repair</p>
+              <p>Quick Repair</p>
               <p>Immediate Response</p>
               <p>Timely Support</p>
             </div>
