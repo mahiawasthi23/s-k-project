@@ -26,7 +26,7 @@ const Home = () => {
 
   const fetchFeedbacks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/feedbacks');
+      const response = await axios.get('https://s-k-backend-project-1.onrender.com/api/feedbacks');
       setStoredFeedbacks(response.data);
     } catch (error) {
       console.error('Error fetching feedbacks:', error);
@@ -44,7 +44,7 @@ const Home = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/feedbacks', {
+      await axios.post('https://s-k-backend-project-1.onrender.com/api/feedbacks', {
         name: userName,
         rating: selectedRating,
         text: feedbackText,
@@ -143,7 +143,7 @@ const Home = () => {
           </Link>
         </div>
 
-        <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto' }}>
+        <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto'}}>
           <h2>Rate Our Services</h2>
 
           <div style={{ marginBottom: '10px' }}>
@@ -157,9 +157,9 @@ const Home = () => {
             />
           </div>
 
-          <div style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px',  }}>
             <label>Rate us:</label>
-            <div style={{ fontSize: '24px', cursor: 'pointer' }}>
+            <div style={{ fontSize: '24px', cursor: 'pointer',display:'flex' }}>
               {[1, 2, 3, 4, 5].map((star) => (
                 <span
                   key={star}
