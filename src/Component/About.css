@@ -110,22 +110,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
 }
 .about-container p{
     margin-top: 30px;
     font-size: 19px;
     font-family: f;
     word-spacing: 2px;
+    line-height: 30px;
 }
 .about-container h2{
-    margin-top: -30px;
-    font-size: 30px;;
+    color: #0057A6;
+    font-size: 30px;
+    text-align: center;
+    
 }
 
 .about-your{
+    height: 300px;
+    width:100%;
     padding: 30px;
     animation: slideInLeft 1s ease forwards;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -141,10 +151,10 @@
 }
 
 .about-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 20PX;
-    animation-delay: 0.3s;
+    height: 300px;
+    width:100%;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     animation: slideInRight 1s ease forwards;
 }
 
@@ -160,45 +170,13 @@
 }
 
 .images{
-    width: 350PX;
-    height:260PX;
+    width: 400PX;
+    height:300PX;
     margin-left: 100px;
+    margin-top: -31px;
 }
 
-@media (min-width: 1200px) {
-    /* .about-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        margin-top: 100px;
-    } */
 
-    /* .about-container p {
-        margin-top: 30px;
-        font-size: 19px;
-        font-family: f;
-        word-spacing: 2px;
-    } */
-
-    /* .about-container h2 {
-        margin-top: -30px;
-        font-size: 30px;
-    } */
-
-    /* .about-image {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        animation: slideInRight 1s ease forwards;
-    } */
-
-    /* .images {
-        width: 350px;
-        height: 260px;
-        margin-left: 100px;
-    } */
-}
 
 @media (max-width: 768px) {
     .about-container {
@@ -219,14 +197,13 @@
 
     .images {
         width: 100%; 
-        height: auto;
+        height: 99%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .about-image {
         width: 100%; 
-        margin-top: 20px;
     }
 }
 @media (max-width: 480px) {
@@ -245,13 +222,13 @@
     }
     .images {
         width: 100%; 
-        height: auto;
+        height: 99%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .about-image {
         width: 100%;
-        margin-top: 20px;
+        /* margin-top: -20px; */
     }
 }
 /*  */
@@ -271,18 +248,19 @@
     font-size: 36px;
     font-family: "PingFang SC", sans-serif;  
     font-weight: 700;
-    color: #0057A6;
+   
     line-height: 40px;
 }
 
 .mission-home p{
     margin-top: 0;
+    color: #0057A6;
     margin-bottom: 1rem;
 }
 
 .about-miision-item{
-    margin-top: 70px;
-    margin-left: 15%;
+    margin-top: 50px;
+    margin-left: 10%;
 
 
 }
@@ -290,21 +268,26 @@
 .about-miision-item .mission-item-row{
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
-    margin-right: -15px;
-    margin-left: -15px;
+    gap: 20px;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
 
 }
 
 .mission-item-col{
     height: 262px;
+    width: 240px     ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 
 }
 
 .mission-item-col .about-mission-data {
+
     padding: 10px;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    
 }
  
 .about-mission-data p{
@@ -313,8 +296,12 @@
 
 .about-mission-data h3{
     margin-top: 20px; 
+    
 }
 
+.about-mission-data h3:hover{
+    color: #0057A6;
+}
 
 
 
@@ -377,7 +364,9 @@
   .team-heading{
     font-size:clamp(1.5rem,4vw,2rem);
     font-family:f;
-    word-spacing:5px
+    color: #0057A6;
+    font-size: 30px;
+    font-family:Arial, sans-serif;
   }
   
   .team-container{
