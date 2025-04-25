@@ -56,6 +56,36 @@
   justify-content: center;
   gap: 25px;
 }
+  .container-font-details:hover{
+    transition: transform 0.3s ease,color 0.3s ease,text-shadow 0.3s ease;
+  }
+  .container-font-details:hover h1{
+    color: rgb(2, 2, 124);
+  }
+
+  .container-font-details h1,.container-font-details p{
+    transform: translateY(-10px);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .gallary-container .gallray-back{
+    height: 400px;
+    width: 450px;
+    margin-right: 20px;
+  }
+
+  .gallry-image {
+    text-align: center;
+    padding: 50px 5%;
+    margin-top: 50px;
+  }
+  
+  .gallry-box {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
 
 .gallery-item {
   width: 280px;
