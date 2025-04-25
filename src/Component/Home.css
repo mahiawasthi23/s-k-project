@@ -231,7 +231,7 @@
   }
   
   
-  .home-intro p, .home-why-us ul, .home-testimonials p {
+  .home-intro p, .home-why-us ul{
     font-size: 1.15rem; 
     color: #495057; 
     line-height: 1.7;
