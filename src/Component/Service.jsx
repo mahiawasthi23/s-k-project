@@ -6,8 +6,7 @@ function Service() {
             <div className="service-background">
                 <div className="service-heding">
                 <h1>Our Professional Services</h1>
-                <p>Comprehensive Home Repair</p>
-                <p>and Installation Solutions</p>
+                <p>Comprehensive Home Repair and Installation Solutions</p>
                 </div>
             </div>
             <ServiceList/>
