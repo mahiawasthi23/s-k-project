@@ -75,27 +75,24 @@
 @media (max-width: 768px) {
     .service-background {
         padding: 40px 20px;
+        min-height: 0;
     }
 
-    .service-heding h1 {
-        font-size: 1.8rem;
-    }
-
-    .service-heding p {
-        font-size: 1.2rem;
-    }
-
-    .service-background {
-        min-height: 100vh;
-    }
-}
-
-@media (max-width: 480px) {
     .service-heding h1 {
         font-size: 1.5rem;
     }
 
     .service-heding p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-heding h1 {
+        font-size: 1.3rem;
+    }
+
+    .service-heding p {
+        font-size: 0.5rem;
     }
 }
