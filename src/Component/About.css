@@ -3,7 +3,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +13,8 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
     position: relative;
+    min-height: 100vh;
+    height: auto;
 }
 
 .main-about::before{
@@ -31,7 +32,6 @@
   position:relative;
   z-index:1
 }
-
 .main-about h1{
     color: white;
     margin-left: 100px;
@@ -67,28 +67,69 @@
     color: rgb(214, 106, 5);
 }
 
-/* 2 */
+
+@media (max-width: 768px) {
+    .main-about {
+      padding: 2rem 1rem;
+      min-height: auto;
+    }
+  
+    .main-about h1 {
+      margin-left: 0;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  
+    .about-details p {
+      font-size: 1.1rem;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-about {
+      padding: 1rem;
+    }
+  
+    .main-about h1 {
+      font-size: 2rem;
+    }
+  
+    .about-details p {
+      font-size: 1rem;
+    }
+  }
+  
 .about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
-    margin-bottom: 100px; 
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 10px;
 }
 .about-container p{
     margin-top: 30px;
     font-size: 19px;
     font-family: f;
     word-spacing: 2px;
+    line-height: 30px;
 }
 .about-container h2{
-    margin-top: -30px;
-    font-size: 30px;;
+    color: #0057A6;
+    font-size: 30px;
+    text-align: center;
+    
 }
 
 .about-your{
+    height: 300px;
+    width:100%;
     padding: 30px;
     animation: slideInLeft 1s ease forwards;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -104,10 +145,10 @@
 }
 
 .about-image{
-    width: 100%;
-    height: 100%;
-    border-radius: 20PX;
-    animation-delay: 0.3s;
+    height: 300px;
+    width:100%;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     animation: slideInRight 1s ease forwards;
 }
 
@@ -123,45 +164,13 @@
 }
 
 .images{
-    width: 350PX;
-    height:260PX;
+    width: 400PX;
+    height:300PX;
     margin-left: 100px;
+    margin-top: -31px;
 }
 
-@media (min-width: 1200px) {
-    .about-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 50px;
-        margin-top: 100px;
-    }
 
-    .about-container p {
-        margin-top: 30px;
-        font-size: 19px;
-        font-family: f;
-        word-spacing: 2px;
-    }
-
-    .about-container h2 {
-        margin-top: -30px;
-        font-size: 30px;
-    }
-
-    .about-image {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        animation: slideInRight 1s ease forwards;
-    }
-
-    .images {
-        width: 350px;
-        height: 260px;
-        margin-left: 100px;
-    }
-}
 
 @media (max-width: 768px) {
     .about-container {
@@ -182,14 +191,13 @@
 
     .images {
         width: 100%; 
-        height: auto;
+        height: 99%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .about-image {
         width: 100%; 
-        margin-top: 20px;
     }
 }
 @media (max-width: 480px) {
@@ -208,67 +216,66 @@
     }
     .images {
         width: 100%; 
-        height: auto;
+        height: 99%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 5px;
     }
     .about-image {
         width: 100%;
-        margin-top: 20px;
     }
 }
 
-/*  */
-
-
 .mission-container{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 90px;
+    margin: 70px 0 70px 0;
 }
 
 .mission-home{
     font-size: 36px;
     font-family: "PingFang SC", sans-serif;  
     font-weight: 700;
-    color: #0057A6;
+   
     line-height: 40px;
 }
 
 .mission-home p{
     margin-top: 0;
+    color: #0057A6;
     margin-bottom: 1rem;
 }
 
 .about-miision-item{
-    margin-top: 70px;
-    margin-left: 15%;
+    margin-top: 50px;
 
 
 }
 
-.about-miision-item .mission-item-row{
+.about-miision-item{
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
-    margin-right: -15px;
-    margin-left: -15px;
+    gap: 20px;
 
 }
 
 .mission-item-col{
     height: 262px;
+    width: 240px     ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 
 }
 
 .mission-item-col .about-mission-data {
+
     padding: 10px;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    
 }
  
 .about-mission-data p{
@@ -277,17 +284,18 @@
 
 .about-mission-data h3{
     margin-top: 20px; 
+    
 }
 
-
-
+.about-mission-data h3:hover{
+    color: #0057A6;
+}
 
 
 .mission-item-col .about-mission-data{
     padding: 10px;
     cursor: pointer;
 }
-
 
 .about-mission-data i,
 .about-mission-data h3,
@@ -297,28 +305,34 @@
 }
 
 
-
-/* HOVER STATE */
 .about-mission-data:hover i  { transform: translateY(-8px); }
 .about-mission-data:hover h3 { transform: translateY(-6px); }
 .about-mission-data:hover p  { transform: translateY(-4px); }
 
 
 
+@media (max-width:767px) {
+    .mission-container{
+        margin: 50px 0 50px 0;
+     }
+
+    .about-miision-item{
+      gap: 24px;
+    }
+    .mission-item-col{
+        width: 100%; 
+        height: auto; 
+    }
+    .about-mission-data h3 {
+        font-size: 20px; 
+    }
+    .mission-home {
+        font-size: 24px; 
+        line-height: 30px;
+     }
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-  
-/*  3*/
 .team-section{
     padding:50px 5%;
     text-align:center
@@ -327,10 +341,13 @@
   .team-heading{
     font-size:clamp(1.5rem,4vw,2rem);
     font-family:f;
-    word-spacing:5px
+    color: #0057A6;
+    font-size: 30px;
+    font-family:Arial, sans-serif;
   }
   
   .team-container{
+    max-width: 1100px;
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
@@ -394,3 +411,14 @@
     .team-member{max-width:100%;flex:1 1 100%}
   }
   
+  @media (max-width: 1200px) {
+    .team-member {
+      flex: 1 1 45%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-member {
+      flex: 1 1 100%;  
+    }
+  }

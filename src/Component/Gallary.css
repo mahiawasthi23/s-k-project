@@ -1,33 +1,68 @@
-.gallary-container {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    background:linear-gradient(to right, rgb(218, 218, 218),rgb(241, 240, 240),rgb(242, 240, 240),rgb(252, 249, 249));
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+.gallery-page {
+  font-family: "Segoe UI", sans-serif;
+}
 
-  .container-font-details{
-    padding: 0 0 50px 60px;
-    font-size: 25px;
-    text-align: left;
-  }
-  .container-font-details h1{
-    color: rgb(241, 121, 9);
-  }
 
+.hero-banner {
+  background: linear-gradient(to right, rgba(0, 0, 50, 0.2), rgba(0, 0, 0, 0.2)), url('/AC_gallery.png') no-repeat top center/cover;
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+
+.hero-text {
+  max-width: 700px;
+  padding: 0 20px;
+  text-shadow: 3px 0 2px black;
+}
+
+.hero-text:hover{
+  color: rgb(241, 121, 9);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: slideDown 1s ease-out;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  animation: slideUp 1.5s ease-out;
+}
+
+
+.gallery-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(120deg, #f0f4ff, #e8fcff);
+}
+
+.gallery-wrapper h2 {
+  text-align: center;
+  color: rgb(2, 28, 101); 
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
   .container-font-details:hover{
     transition: transform 0.3s ease,color 0.3s ease,text-shadow 0.3s ease;
   }
   .container-font-details:hover h1{
     color: rgb(2, 2, 124);
   }
-
-
 
   .container-font-details h1,.container-font-details p{
     transform: translateY(-10px);
@@ -53,58 +88,99 @@
     gap: 30px;
   }
 
-.gallary-item{
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
-    transition: all 0.4s ease; 
-    transform-style: preserve-3d;
-    perspective: 1000px;
+.gallery-item {
+  width: 280px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 5px;
 }
 
-.gallary-item img{
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-item img {
+  border-radius: 16px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item p {
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+  background-color: #f8f9fc;
+  border-top: 1px solid #eee;
+}
+.gallery-item p:hover{
+  color: rgb(76, 76, 247);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease;
+}
+
+.zoom-in {
+  animation: zoomIn 0.8s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .gallery-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    height: 50vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .gallery-item {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: all 0.4s ease;
-    transform: scale(1.02);
-}
-
-
-@media screen and (max-width: 1024px) {
-  .gallary-container {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-  }
-
-  .gallary-container .gallray-back {
-    margin-right: 0;
-    height: 300px;
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .container-font-details {
-    font-size: 20px;
-    margin-top: 30px;
-    text-align: center;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .gallary-item img {
-    height: 200px;
-  }
-
-  .container-font-details {
-    font-size: 18px;
-    padding: 0 10px;
-  }
-
-  .gallry-box {
-    gap: 20px;
-  }
-}
-

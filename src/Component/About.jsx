@@ -41,21 +41,20 @@ function About  () {
         <p>Our Mission </p>
       </div>
       <div className='about-miision-item'>
-        <div className='mission-item-row'>
 
-          <div className='mission-item-col'>
+          <div className='mission-item-col' >
             <div className='about-mission-data'>
             <i className="about-mission-icon">
               <img src="/swift.png" alt="Download icon" />
             </i>
               <h3>Swift</h3>
-              <p>uick Repair</p>
+              <p>Quick Repair</p>
               <p>Immediate Response</p>
               <p>Timely Support</p>
             </div>
           </div>
 
-          <div className='mission-item-col'>
+          <div className='mission-item-col' >
             <div className='about-mission-data'>
             <i className="about-mission-icon">
               <img src="/Professional.png" alt="Download icon" />
@@ -67,7 +66,7 @@ function About  () {
             </div>
           </div>
 
-          <div className='mission-item-col'>
+          <div className='mission-item-col' id='realiable'>
             <div className='about-mission-data'>
             <i className="about-mission-icon">
               <img src="/Reliable.png" alt="Download icon" />
@@ -79,7 +78,7 @@ function About  () {
             </div>
           </div>
 
-          <div className='mission-item-col'>
+          <div className='mission-item-col' id='valuable'>
             <div className='about-mission-data'>
             <i className="about-mission-icon">
               <img src="/valuable.png" alt="Download icon" />
@@ -89,22 +88,9 @@ function About  () {
               <p>Humanistic</p>
               <p>Value-added</p>
             </div>
-          </div>
         </div>
       </div>
-    </div>
-
-    
-
-
-
-
-
-
-
-
-
-   <section className='team-section'>
+      <section className='team-section'>
     <h2 className='team-heading'>We're Here to Keep You Cool & Comfortable</h2>
     <div className='team-container'>
     <div className='team-member'>
@@ -129,6 +115,9 @@ function About  () {
       </div>
     </div>
    </section>
+    </div>
+
+   
     </>
   )
 }
