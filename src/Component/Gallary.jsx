@@ -7,15 +7,11 @@ const galleryData = [
     alt: "AC Installation",
     title: "AC Installation",
   },
+
   {
-    src: "/AC3.jpg",
-    alt: "Maintenance Check",
-    title: "Maintenance Check",
-  },
-  {
-    src: "/AC4.avif",
-    alt: "Filter Cleaning",
-    title: "Filter Cleaning",
+    src: "vrvAC2.jpeg",
+    alt: "VRV AC",
+    title: "VRV AC",
   },
   {
     src: "/AC4.jpg",
@@ -43,6 +39,11 @@ const galleryData = [
     title: "Outdoor Unit Setup",
   },
   {
+    src: "/AC4.avif",
+    alt: "Filter Cleaning",
+    title: "Filter Cleaning",
+  },
+  {
     src: "ACImage7.jpg",
     alt: "Cassette AC Servicing",
     title: "Cassette AC Servicing",
@@ -62,6 +63,67 @@ const galleryData = [
     alt: "Cassette AC Installation",
     title: "Cassette AC Installation",
   },
+  {
+    src: "cassette 2.jpeg",
+    alt: "Cassette AC ",
+    title: "Cassette AC ",
+  },
+  {
+    src: "/AC3.jpg",
+    alt: "Maintenance Check",
+    title: "Maintenance Check",
+  },
+  {
+    src: "cassette AC.jpg",
+    alt: "View Cassette AC ",
+    title: "View Cassette AC ",
+  },
+  {
+    src: "split2AC.jpeg",
+    alt: "Split AC unit",
+    title: "Split AC unit",
+  },
+  {
+    src: "AC.jpeg",
+    alt: "Recharge AC Guide",
+    title: "Recharge AC Guide",
+  },
+  {
+    src: "towerAC.jpeg",
+    alt: "Standing AC",
+    title: "Standing AC",
+  },
+  {
+    src: "towerAC2.jpeg",
+    alt: "Tower air conditioner",
+    title: "Tower air conditioner",
+  },
+  {
+    src: "splitAC.jpeg",
+    alt: "Wall AC",
+    title: "Wall AC",
+  },
+  {
+    src: "vrfAC.jpeg",
+    alt: "VRF AC",
+    title: "VRF AC",
+  },
+  {
+    src: "vrvAC.jpeg",
+    alt: "VRV system",
+    title: "VRV system",
+  },
+  {
+    src: "vrfAC2.jpeg",
+    alt: "VRF air conditioner",
+    title: "VRF air conditioner",
+  },
+  {
+    src: "tower3.jpeg",
+    alt: " Tower AC Maintenance Service",
+    title: " Tower AC Maintenance Service",
+  },
+
 ];
 
 const Gallary = () => {

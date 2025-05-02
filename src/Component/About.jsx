@@ -27,7 +27,7 @@ function About  () {
     <div className='about-container'> 
         <div className='about-your'>
             <h2>Who We Are</h2>
-            <p>SK Enterprises was founded in 2010 with a simple mission: to provide reliable, efficient, and affordable home repair and installation services. What started as a small local business has grown into a trusted name in home maintenance.</p>
+            <p>SK Enterprises was founded in 2018 with a simple mission: to provide reliable, efficient, and affordable home repair and installation services. What started as a small local business has grown into a trusted name in home maintenance. For any assistance or queries, our customer support representative, Gopal Mhasal, is always ready to help.</p>
         </div>
         <div className='about-image'>
             <img src='/image AC.png' className='images'></img>
