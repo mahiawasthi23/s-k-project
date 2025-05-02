@@ -41,7 +41,6 @@ function About  () {
         <p>Our Mission </p>
       </div>
       <div className='about-miision-item'>
-        <div className='mission-item-row'>
 
           <div className='mission-item-col' >
             <div className='about-mission-data'>
@@ -89,12 +88,9 @@ function About  () {
               <p>Humanistic</p>
               <p>Value-added</p>
             </div>
-          </div>
         </div>
       </div>
-    </div>
-
-   <section className='team-section'>
+      <section className='team-section'>
     <h2 className='team-heading'>We're Here to Keep You Cool & Comfortable</h2>
     <div className='team-container'>
     <div className='team-member'>
@@ -119,6 +115,9 @@ function About  () {
       </div>
     </div>
    </section>
+    </div>
+
+   
     </>
   )
 }

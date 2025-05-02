@@ -1,6 +1,3 @@
-
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Home.css';
@@ -143,93 +140,72 @@ const Home = () => {
           </Link>
         </div>
 
-        <div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto'}}>
-          <h2>Rate Our Services</h2>
+<div className="home-rating-section">
+  <div className='home-feedback_section'>
+  <h2 className="home-section-title">Rate Our Services</h2>
+  <div className="home-feedback-name">
+    <label className='l'>Name:</label>
+    <input
+      type="text"
+      value={userName}
+      onChange={(e) => setUserName(e.target.value)}
+      className="home-name-input"
+      placeholder="Enter your name"
+    />
+  </div>
 
-          <div style={{ marginBottom: '10px' }}>
-            <label>Name:</label>
-            <input
-              type="text"
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }}
-              placeholder="Enter your name"
-            />
-          </div>
+  <div className="home-rating-block">
+    <div className="home-rating-stars">
+    <label>Rate us:</label>
+      {[1, 2, 3, 4, 5].map((star) => (
+        <span
+          key={star}
+          onClick={() => handleStarClick(star)}
+          className={`star ${star <= selectedRating ? 'selected' : ''}`}
+        >
+          ★
+        </span>
+      ))}
+    </div>
+  </div>
 
-          <div style={{ marginBottom: '10px',  }}>
-            <label>Rate us:</label>
-            <div style={{ fontSize: '24px', cursor: 'pointer',display:'flex' }}>
-              {[1, 2, 3, 4, 5].map((star) => (
-                <span
-                  key={star}
-                  onClick={() => handleStarClick(star)}
-                  style={{ color: star <= selectedRating ? 'gold' : 'gray' }}
-                >
-                  ★
-                </span>
-              ))}
-            </div>
-          </div>
+  <div className="home-feedback-textarea">
+    <label className='l'>Feedback:</label>
+    <textarea
+      value={feedbackText}
+      onChange={(e) => setFeedbackText(e.target.value)}
+      className="home-feedback-text"
+      placeholder="Write your feedback here..."
+    ></textarea>
+  </div>
 
-          <div style={{ marginBottom: '10px' }}>
-            <label>Feedback:</label>
-            <textarea
-              value={feedbackText}
-              onChange={(e) => setFeedbackText(e.target.value)}
-              rows="4"
-              style={{ width: '100%', padding: '8px', marginTop: '5px' }}
-              placeholder="Write your feedback here..."
-            ></textarea>
-          </div>
+  <button className="home-learn-more" onClick={submitFeedback}>
+    Submit Feedback
+  </button>
+  </div>
+ 
+  <div className='home-feedback_section'>
+  <h3 className="home-section-title">Recent Feedback</h3>
+  <div className='home-choose-us'>
+  {(showAllFeedbacks ? storedFeedbacks : storedFeedbacks.slice(0, 3)).map((feedback, index) => (
+    <div key={index} className="home-choose-card">
+      <div>
+        <strong>{feedback.name}</strong> ({new Date(feedback.date).toLocaleDateString()})
+      </div>
+      <div className="home-testimonial-stars">{renderStars(feedback.rating)}</div>
+      <p>{feedback.text}</p>
+    </div>
+  ))}
+ </div>
+  {storedFeedbacks.length > 3 && (
+    <button className="home-toggle-feedback-button" onClick={() => setShowAllFeedbacks(!showAllFeedbacks)}>
+      {showAllFeedbacks ? 'Show Less' : 'Show More'}
+    </button>
+  )}
+   </div>
+</div>
 
-          <button
-            onClick={submitFeedback}
-            style={{
-              backgroundColor: 'blue',
-              color: 'white',
-              padding: '10px 20px',
-              border: 'none',
-              cursor: 'pointer',
-              borderRadius: '4px',
-            }}
-          >
-            Submit Feedback
-          </button>
 
-          <h3 style={{ marginTop: '30px' }}>Recent Feedback</h3>
-          {(showAllFeedbacks ? storedFeedbacks : storedFeedbacks.slice(0, 3)).map((feedback, index) => (
-            <div
-              key={index}
-              style={{
-                backgroundColor: '#f9f9f9',
-                padding: '10px',
-                margin: '10px 0',
-                borderRadius: '5px',
-              }}
-            >
-              <div><strong>{feedback.name}</strong> ({new Date(feedback.date).toLocaleDateString()})</div>
-              <div>{renderStars(feedback.rating)}</div>
-              <p>{feedback.text}</p>
-            </div>
-          ))}
-
-          {storedFeedbacks.length > 3 && (
-            <button
-              onClick={() => setShowAllFeedbacks(!showAllFeedbacks)}
-              style={{
-                marginTop: '10px',
-                backgroundColor: '#ddd',
-                border: 'none',
-                padding: '8px 16px',
-                cursor: 'pointer',
-                borderRadius: '4px',
-              }}
-            >
-              {showAllFeedbacks ? 'Show Less' : 'Show More'}
-            </button>
-          )}
-        </div>
         <div className="home-cta-strip">
         <h3>Need AC Service Now?</h3>
         <p>Call us at <strong>+91-9767520021</strong></p>

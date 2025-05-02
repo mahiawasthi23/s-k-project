@@ -17,6 +17,7 @@ body{
 .contact-info-content {
     flex: 1;
 }
+
 .img-container {
     flex: 1;
     display: flex;
@@ -257,7 +258,6 @@ body{
         word-spacing: 0;
         padding-top: 47px;
         padding-left: 4px;
-
     }
     .contact-para {
         font-size: 18px;
@@ -270,15 +270,12 @@ body{
     .contact-info-content {
         flex: 3;
     }
-
     .img-container img {
         max-width: 97%;
-    
     }
     .img-container{
         flex: 3;
     }
-    
     .contact-item {
         display: flex;
         align-items: center;
@@ -299,9 +296,7 @@ body{
         margin-top: 8px;
     }
     .contact-item i {
-      
         font-size: 1.2rem;
-        
     }
     .contact-item{
         padding: 2px;
