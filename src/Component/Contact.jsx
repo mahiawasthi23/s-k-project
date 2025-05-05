@@ -47,7 +47,6 @@ function Contact() {
       alert('Something went wrong!');
     });
   };
-
   return (
     <>
       <main className='contact-hero'>
