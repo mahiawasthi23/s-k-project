@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import '../Component/contact.css';
-
-
+import '../Component/contact.css'; 
 function Contact() {
   const [rotateMain, setRotateMain] = useState(false);
   const [rotateSub, setRotateSub] = useState(false);
