@@ -34,8 +34,6 @@ function About  () {
         </div>
     </div>
 
-
-
     <div className='mission-container'>
       <div className='mission-home'>
         <p>Our Mission </p>
@@ -117,7 +115,6 @@ function About  () {
    </section>
     </div>
 
-   
     </>
   )
 }
