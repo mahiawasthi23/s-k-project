@@ -139,6 +139,7 @@ function About() {
     }
   };
 
+  
   return (
     <>
       <main className='main-about'>
