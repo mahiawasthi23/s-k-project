@@ -129,11 +129,11 @@ const Home = () => {
           <h2 className='home-section-title'>Gallery</h2>
           <div className="home-gallery-grid">
             <img src="/AC.jpg" alt="Work 1" />
-            <img src="/AC2.jpg" alt="Work 2" />
-            <img src="/AC4.jpg" alt="Work 3" />
-            <img src="/AC3.jpg" alt="Work 4" />
-            <img src="/AC4.avif" alt="Work 5" />
-            <img src="/ACImage1.jpg" alt="Work 6" />
+            <img src="/vrv.jpg" alt="Work 2" />
+            <img src="/copper pipe1.jpg" alt="Work 3" />
+            <img src="/ductable2.jpg" alt="Work 4" />
+            <img src="/vrf1.jpg" alt="Work 5" />
+            <img src="/servicing22.jpg" alt="Work 6" />
           </div>
           <Link to="/gallary">
             <button className="home-learn-more">See More</button>
