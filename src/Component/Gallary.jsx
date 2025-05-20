@@ -124,7 +124,6 @@ const galleryData = [
     title: "Out Door Unit Setup",
   },
 ];
-
 const Gallary = () => {
   return (
     <div className="gallery-page">
