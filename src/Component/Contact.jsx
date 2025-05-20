@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import '../Component/contact.css';
-
-
+ 
 function Contact() {
   const [rotateMain, setRotateMain] = useState(false);
   const [rotateSub, setRotateSub] = useState(false);
@@ -47,7 +46,6 @@ function Contact() {
       alert('Something went wrong!');
     });
   };
-
   return (
     <>
       <main className='contact-hero'>
@@ -66,23 +64,23 @@ function Contact() {
             <div className='contact-details'>
               <div className='contact-item'>
                 <i className="fas fa-map-marker-alt"></i>
-                <p>123 Service Street, Repair City, RC 12345</p>
+                <p><strong>Address:</strong> 123 Service Street, Repair City, RC 12345</p>
               </div>
               <div className='contact-item'>
                 <i className="fa-solid fa-user"></i>
-                <p>Customer Support: Gopal Mahasal</p>
+                <p><strong>Customer Support:</strong>  Gopal Mhasal</p>
               </div>
               <div className='contact-item'>
                 <i className="fas fa-phone"></i>
-                <p>Customer Support Phone: +919767520021</p>
+                <p><strong>Customer Support Phone:</strong>  +91 9767520021</p>
               </div>
               <div className='contact-item'>
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:sk.entrp1118@gmail.com">Email: sk.entrp1118@gmail.com</a>
+                <a href="mailto:sk.entrp1118@gmail.com"><strong>Email: </strong>  sk.entrp1118@gmail.com</a>
               </div>
               <div className='contact-item'>
                 <i className="fas fa-clock"></i>
-                <p>Hours: Mon-Sat 9:30 AM - 6:00 PM</p>
+                <p><strong>Hours:</strong>  Mon-Sat 9:30 AM - 6:00 PM</p>
               </div>
             </div>
           </div>

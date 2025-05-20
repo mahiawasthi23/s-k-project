@@ -17,7 +17,6 @@ body{
 .contact-info-content {
     flex: 1;
 }
-
 .img-container {
     flex: 1;
     display: flex;
@@ -110,6 +109,7 @@ body{
 .contact-item i:hover{
     color: #eee8e8;
 }
+
 .contact-item p {
     margin-right: 15px;
     font-style: normal;
