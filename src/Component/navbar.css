@@ -7,12 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 2rem 0rem 2rem;
   position: relative; 
 }
 
 .navbar img {
-  width:150px;
+  width:120px;
+  height:100px;
 }
 .nav-contain {
   display: flex;
