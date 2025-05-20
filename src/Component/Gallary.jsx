@@ -3,18 +3,18 @@ import "./Gallary.css";
 
 const galleryData = [
   {
-    src: "/AC2.jpg",
-    alt: "AC Installation",
-    title: "AC Installation",
+    src: "/copper pipe1.jpg",
+    alt: "Copper Pipe",
+    title: "Copper pipe",
   },
 
   {
-    src: "vrvAC2.jpeg",
+    src: "vrv.jpg",
     alt: "VRV AC",
     title: "VRV AC",
   },
   {
-    src: "/AC4.jpg",
+    src: "/ductable.jpg",
     alt: "AC Servicing",
     title: "AC Servicing",
   },
@@ -39,9 +39,9 @@ const galleryData = [
     title: "Outdoor Unit Setup",
   },
   {
-    src: "/AC4.avif",
-    alt: "Filter Cleaning",
-    title: "Filter Cleaning",
+    src: "/copper pipe2.jpg",
+    alt: "AC Copper Tubes",
+    title: "AC Copper Tubes",
   },
   {
     src: "ACImage7.jpg",
@@ -63,69 +63,70 @@ const galleryData = [
     alt: "Cassette AC Installation",
     title: "Cassette AC Installation",
   },
+
+
+  
   {
-    src: "cassette 2.jpeg",
+    src: "cassette2.jpg",
     alt: "Cassette AC ",
     title: "Cassette AC ",
   },
   {
-    src: "/AC3.jpg",
-    alt: "Maintenance Check",
-    title: "Maintenance Check",
+    src: "/copper pipe5.jpg",
+    alt: "High-Quality Piping",
+    title: "High-Quality Piping",
   },
   {
-    src: "cassette AC.jpg",
+    src: "cassette1.jpg",
     alt: "View Cassette AC ",
     title: "View Cassette AC ",
   },
   {
-    src: "split2AC.jpeg",
-    alt: "Split AC unit",
-    title: "Split AC unit",
+    src: "copper pipe3.jpg",
+    alt: "Durable Cooling Pipes",
+    title: "Durable Cooling Pipes",
   },
   {
-    src: "AC.jpeg",
-    alt: "Recharge AC Guide",
-    title: "Recharge AC Guide",
+    src: "copper pipe4.jpg",
+    alt: "Long-Lasting Pipes",
+    title: "Long-Lasting Pipes",
   },
   {
-    src: "towerAC.jpeg",
-    alt: "Standing AC",
-    title: "Standing AC",
+    src: "vrv2.jpg",
+    alt: "VRV AC",
+    title: "VRV AC",
   },
   {
-    src: "towerAC2.jpeg",
-    alt: "Tower air conditioner",
-    title: "Tower air conditioner",
+    src: "servicing22.jpg",
+    alt: "Maintenance Service",
+    title: "Maintenance Service",
   },
   {
-    src: "splitAC.jpeg",
-    alt: "Wall AC",
-    title: "Wall AC",
-  },
-  {
-    src: "vrfAC.jpeg",
+    src: "vrf1.jpg",
     alt: "VRF AC",
     title: "VRF AC",
   },
   {
-    src: "vrvAC.jpeg",
+    src: "vrv.jpg",
     alt: "VRV system",
     title: "VRV system",
   },
   {
-    src: "vrfAC2.jpeg",
+    src: "vrf2.jpg",
     alt: "VRF air conditioner",
     title: "VRF air conditioner",
   },
   {
-    src: "tower3.jpeg",
+    src: "ductable2.jpg",
     alt: " Tower AC Maintenance Service",
     title: " Tower AC Maintenance Service",
   },
-
+  {
+    src: "4ac.jpg",
+    alt: "Out Door Unit Setup",
+    title: "Out Door Unit Setup",
+  },
 ];
-
 const Gallary = () => {
   return (
     <div className="gallery-page">
