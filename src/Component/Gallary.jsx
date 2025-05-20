@@ -98,7 +98,6 @@ const galleryData = [
     alt: "Maintenance Service",
     title: "Maintenance Service",
   },
-  
   {
     src: "vrf1.jpg",
     alt: "VRF AC",
@@ -124,7 +123,6 @@ const galleryData = [
     alt: "Out Door Unit Setup",
     title: "Out Door Unit Setup",
   },
-
 ];
 
 const Gallary = () => {
